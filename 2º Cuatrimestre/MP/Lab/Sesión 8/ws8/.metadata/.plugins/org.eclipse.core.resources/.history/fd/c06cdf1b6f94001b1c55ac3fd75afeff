@@ -1,0 +1,81 @@
+/**
+ * 
+ */
+package queue;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.mp.collections.impl.LinkedList;
+
+/**
+ * @author blanc
+ *
+ */
+public class EnqueueTests {
+
+	private Object obj;
+	private Object obj1;
+	private Object obj2;
+	
+	/**
+	 * 1 Test el tamaño de la cola después de realizar la operación enqueue  
+	 * 2 Test empty después de realizar la operación enqueue  
+	 * 3 Test la cabeza después de la operación enqueue sobre una nueva cola
+	 * 4 Test la cola después de la operación enqueue sobre una nueva cola
+	 * 5 Test la cola  después de realizar enqueue sobre una cola no vacía
+	 * @throws Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		obj = new Object();
+		obj1 = new Object();
+		obj2 = new Object();
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testEnqueue1() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.enqueue((T) obj);
+		assertEquals(1, l1.size());
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testEnqueue2() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.enqueue((T) obj);
+		assertFalse(l1.isEmpty());
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testEnqueue3() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.enqueue((T) obj);
+		assertEquals(obj, l1.get(0));
+	}
+
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testEnqueue4() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.push((T) obj1);
+		l1.push((T) obj2);
+		l1.enqueue((T) obj);
+		assertEquals(obj, l1.get(2));
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testEnqueue5() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.push((T) obj1);
+		l1.push((T) obj2);
+		l1.enqueue((T) obj);
+		assertEquals(obj, l1.get(0));
+	}
+}

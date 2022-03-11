@@ -1,0 +1,110 @@
+inicio
+
+Uo1234
+uo123456
+uo12345
+
+UO123
+UO-1234
+
+*
+/
+()
+:=
++
+-
+;
+imprime
+
+9999
+-909999
+
+0,50002
+-12424,00916287
+
+
+
+a@uniovi.es
+a.1.2@uniovi.com
+
+2a@uniovi.es
+a..b@uniovi.com
+a.@uniovi.es
+
+
+varA
+a4
+aux
+var_name
+
+3v
+varA_
+Var
+_var1
+
+"Esto es una cadena valida"
+'Con una comilla sola tambien vale'
+
+Esta cadena es invalida porque le faltan las comillas
+"No vale mezclar comillas'
+"Esta cadena, tiene símbolos inválidos!"
+
+
+// Comentario valido
+// ** +aadhiu valido
+
+//invalido
+
+
+
++34-623-456-789
+123-123-123
++6-124-123-123
+123-342
++33-123-123
+
+
+A1357
+BABBA2903
+
+ABBB1340
+BBA034
+
+(1234-3211-11)
+(1234)
+
+(12-122-)
+()
+
+E123
+O123
+
+L1324
+K24aa
+
+12WsEt0
+We34rS67D0
+
+12DDTe0
+wS4eTE
+
+
+
+
+
+jkl12345
+LKJ1
+jlk12345;4325;123
+
+
+jkL12345
+JKL123456
+jlk12345;23554;
+
+
+[jkl12]
+[jkl12345;12345    JKL123;12345    JKL123]
+
+[jkl12345;12345    JKL123   jkl123]
+[jkl12345;12345    JKL123   jkl123]
+fin

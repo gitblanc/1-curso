@@ -1,0 +1,31 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * 
+ */
+
+/**
+ * @author blanc
+ *
+ */
+public class ParseTests {
+
+	/**
+	 * Casos:
+	 * 
+	 * 1 Recibe lista vacía
+	 * 2 Recibe cadena para magazine correcta
+	 * 3 Recibe cadena para newspaper correcta
+	 * 4 Ambas cadenas correctas
+	 * 5 Línea correcta
+	 * 6 Línea incorrecta
+	 */
+	@Test
+	public void testParse1() {
+		List<Publication> parse = new ArrayList<>();
+		sdf;
+	}
+
+}

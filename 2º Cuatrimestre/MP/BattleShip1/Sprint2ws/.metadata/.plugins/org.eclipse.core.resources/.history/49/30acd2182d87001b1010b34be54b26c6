@@ -1,0 +1,116 @@
+/**
+ * 
+ */
+package coordinate.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import board.Coordinate;
+
+/**
+ * @author blanc
+ *
+ */
+public class GoTests {
+
+	private Coordinate a1;
+	private Coordinate b2;
+	private Coordinate a1West;
+	private Coordinate a0North;
+	private Coordinate b2North;
+	private Coordinate b2South;
+	private Coordinate b2East;
+	private Coordinate b2West;
+	
+	/**
+	 * 
+	 * 1- Comprueba una coordenada para columna A y direccion oeste
+	 * 2- Comprueba un Coordinate para la fila 0 y direccion norte
+	 * 3- Comprueba una coordenada no en el borde y direccion norte
+	 * 4- Comprueba una coordenada una coordenada no en el borde y dirección sur
+	 * 5- Comprueba una coordenada una coordenada no en el borde y dirección este
+	 * 6- Comprueba una coordenada una coordenada no en el borde y dirección oeste
+	 */
+	
+	@Before
+	public void setUp() throws Exception {
+		a1 = new Coordinate('A', 1);
+		b2 = new Coordinate('B', 2);
+		a1West = new Coordinate(-1, 0);
+		a0North = new Coordinate('A', 0);
+		b2North = new Coordinate('B', 1);
+		b2South = new Coordinate('B', 3);
+		b2East = new Coordinate('C', 2);
+		b2West = new Coordinate('A', 2);
+	}
+
+	/**
+	 * 1
+	 * GIVEN Una coordenada en el borde izquierdo
+	 * WHEN Se llama al método con dirección oeste
+	 * THEN Devuelve una coordenada no válida, pero que existe
+	 */
+	@Test
+	public void test1() {
+		assertEquals(a1West, a1.go(Coordinate.WEST));
+	}
+	
+	/**
+	 * 2
+	 * GIVEN Una coordenada en el borde superior
+	 * WHEN Se llama al método con dirección norte
+	 * THEN Devuelve una coordenada no válida, pero que existe
+	 */
+	@Test
+	public void test2() {
+		assertEquals(a0North, a0.go(Coordinate.NORTH));
+	}
+	
+	/**
+	 * 3
+	 * GIVEN Una coordenada que no está en el borde
+	 * WHEN Se llama al método con dirección norte
+	 * THEN Devuelve una coordenada válida
+	 */
+	@Test
+	public void test3() {
+		assertEquals(b2North, b2.go(Coordinate.NORTH));
+	}
+	
+	/**
+	 * 4
+	 * GIVEN Una coordenada que no está en el borde
+	 * WHEN Se llama al método con dirección sur
+	 * THEN Devuelve una coordenada válida
+	 */
+	@Test
+	public void test4() {
+		assertEquals(b2South, b2.go(Coordinate.SOUTH));
+	}
+	
+	/**
+	 * 5
+	 * GIVEN Una coordenada que no está en el borde
+	 * WHEN Se llama al método con dirección este
+	 * THEN Devuelve una coordenada válida
+	 */
+	@Test
+	public void test5() {
+		assertEquals(b2East, b2.go(Coordinate.EAST));
+	}
+	
+	/**
+	 * 6
+	 * GIVEN Una coordenada que no está en el borde
+	 * WHEN Se llama al método con dirección oeste
+	 * THEN Devuelve una coordenada válida
+	 */
+	@Test
+	public void test6() {
+		assertEquals(b2West, b2.go(Coordinate.WEST));
+	}
+
+}

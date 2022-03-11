@@ -1,0 +1,55 @@
+/**
+ * 
+ */
+package uo.mp.s5.shapes;
+
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * Superclass Shape (includes rectangle, circle and triangle)
+ * 
+ * @author blanc
+ *
+ */
+public class Shape {
+	/**
+	 * The x coordinate of the upper-left corner.
+	 */
+	private int x;
+
+	/**
+	 * The y coordinate of the upper-left corner.
+	 */
+	private int y;
+
+	/**
+	 * The width of the rectangle, in pixels.
+	 */
+	private Colour colour;
+
+	/**
+	 * @param x
+	 * @param y
+	 * @param colour
+	 */
+	public Shape(int x, int y, Colour colour) {
+		ArgumentChecks.isTrue(x >= 0);
+		ArgumentChecks.isTrue(y >= 0);
+		ArgumentChecks.isTrue(colour != null);
+		this.x = x;
+		this.y = y;
+		this.colour = colour;
+	}
+
+	public Colour getColour() {
+		return colour;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+}

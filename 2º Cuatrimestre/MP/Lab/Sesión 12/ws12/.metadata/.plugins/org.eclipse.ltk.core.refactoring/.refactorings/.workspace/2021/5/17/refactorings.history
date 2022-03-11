@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TransactionsValidator_initial&apos; to &apos;TransactionsValidator&apos;" description="Rename resource &apos;TransactionsValidator_initial&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/TransactionsValidator_initial" name="TransactionsValidator" stamp="1619901120874" updateReferences="true"/>
+</session>

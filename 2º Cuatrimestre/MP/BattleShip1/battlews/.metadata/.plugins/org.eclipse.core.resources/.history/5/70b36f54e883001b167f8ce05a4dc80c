@@ -1,0 +1,94 @@
+package uo.mp.battleship.game;
+
+import uo.mp.battleship.board.Board;
+import uo.mp.battleship.board.BoardBuilder;
+import uo.mp.battleship.interaction.ConsoleInteraction;
+import uo.mp.battleship.player.ComputerPlayer;
+import uo.mp.battleship.player.HumanPlayer;
+import uo.mp2021.util.checks.ArgumentChecks;
+
+public class Game {
+	private HumanPlayer humanPlayer;
+	private ComputerPlayer computerPlayer;
+	private int size;
+	private boolean gameMode;
+	private Board humanBoard;
+	private Board computerBoard;
+	private TurnSelector turn;
+
+	public Game(HumanPlayer leftPlayer, ComputerPlayer rightPlayer) {
+		ArgumentChecks.isTrue(leftPlayer != null);
+		ArgumentChecks.isTrue(rightPlayer != null);
+		this.size = BoardBuilder.DEFAULT_SIZE;
+		this.humanPlayer = leftPlayer;
+		this.computerPlayer = rightPlayer;
+		this.gameMode = false;
+		this.turn = new TurnSelector();
+		this.humanBoard = new Board(size);
+		this.computerBoard = new Board(size);
+		this.humanPlayer.setMyShips(humanBoard);
+		this.humanPlayer.setOpponentShips(computerBoard);
+		this.computerPlayer.setMyShips(computerBoard);
+		this.computerPlayer.setOpponentShips(humanBoard);
+	}
+
+	public Game(HumanPlayer leftPlayer, ComputerPlayer rightPlayer, int size) {
+		ArgumentChecks.isTrue(leftPlayer != null);
+		ArgumentChecks.isTrue(rightPlayer != null);
+		this.humanPlayer = leftPlayer;
+		this.computerPlayer = rightPlayer;
+		this.size = size;
+		this.gameMode = false;
+		this.humanBoard = new Board(size);
+		this.computerBoard = new Board(size);
+		this.humanPlayer.setMyShips(humanBoard);
+		this.humanPlayer.setOpponentShips(computerBoard);
+		this.computerPlayer.setMyShips(computerBoard);
+		this.computerPlayer.setOpponentShips(humanBoard);
+	}
+
+	public void setDebugMode(boolean mode) {
+		this.gameMode = mode;
+	}
+
+	public void play() {
+		while (!humanPlayer.hasWon() && !computerPlayer.hasWon()) {
+			if (turn.next() == 1) {
+				boolean result = humanPlayer.shootAt(humanPlayer.makeChoice());
+				ConsoleInteraction.showGameStatus(humanBoard, computerBoard, gameMode);
+				if (result) {
+					System.out.println("-----HIT-----");
+				} else {
+					System.out.println("-----MISS-----");
+				}
+			} else {
+				boolean result2 = computerPlayer.shootAt(computerPlayer.makeChoice());
+				ConsoleInteraction.showGameStatus(humanBoard, computerBoard, gameMode);
+				if (result2) {
+					System.out.println("-----THE COMPUTER HIT YOUR SHIP-----");
+				} else {
+					System.out.println("-----THE COMPUTER MISSED-----");
+				}
+			}
+		}
+	}
+
+	public boolean getGameMode() {
+		return gameMode;
+	}
+
+	/**
+	 * @return the humanBoard
+	 */
+	public Board getHumanBoard() {
+		return humanBoard;
+	}
+
+	/**
+	 * @return the computerBoard
+	 */
+	public Board getComputerBoard() {
+		return computerBoard;
+	}
+
+}

@@ -1,0 +1,39 @@
+package uo.mp.util.file;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.LinkedList;
+import java.util.List;
+
+import uo.mp.newsstand.service.exception.NotYetImplementedException;
+
+/**
+ * A utility class to read/write text lines from/to a text file
+ */
+public class FileUtil {
+
+	public List<String> readLines(String inFileName) {
+		List<String> res = new LinkedList<>();
+		// Leer de un fichero:
+		// 1 Crear el flujo de entrada(stream)
+		// 2 Leer los datos
+		// 3 Cerrar el flujo (aunque se produzca error)
+
+		BufferedReader in = new BufferedReader(new FileReader(inFileName));
+		try {
+			while (in.ready()) {// mientras haya líneas
+				String line = in.readLine();
+				res.add(line);
+			}
+			
+		} finally {
+			in.close();
+		}
+	}
+
+	public void writeLines(String outFileName, List<String> lines) {
+
+		throw new NotYetImplementedException();
+	}
+
+}

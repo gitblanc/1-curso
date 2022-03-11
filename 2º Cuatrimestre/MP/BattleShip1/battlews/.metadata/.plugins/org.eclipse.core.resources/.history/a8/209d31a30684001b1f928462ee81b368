@@ -1,0 +1,14 @@
+package mp.battleship.sprint1.skeleton.board.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ShootAt1 {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

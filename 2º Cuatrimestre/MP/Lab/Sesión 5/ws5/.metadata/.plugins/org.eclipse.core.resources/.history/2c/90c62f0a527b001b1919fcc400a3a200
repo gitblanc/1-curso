@@ -1,0 +1,78 @@
+package uo.mp.s5.shapes;
+
+import java.io.PrintStream;
+
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * A rectangle specifies an area in a coordinate space that is enclosed by the
+ * the rectangle upper-left point (x, y) in the coordinate space, its width, and
+ * its height.
+ */
+public class Rectangle {
+	/**
+	 * The x coordinate of the upper-left corner.
+	 */
+	private int x;
+
+	/**
+	 * The y coordinate of the upper-left corner.
+	 */
+	private int y;
+
+	/**
+	 * The width of the rectangle, in pixels.
+	 */
+	private int width;
+
+	/**
+	 * The height of the rectangle, in pixels.
+	 */
+	private int height;
+
+	private Colour colour;
+
+	public Rectangle(int x, int y, int width, int height, Colour colour) {
+		ArgumentChecks.isTrue(x >= 0);
+		ArgumentChecks.isTrue(y >= 0);
+		ArgumentChecks.isTrue(width >= 0);
+		ArgumentChecks.isTrue(height >= 0);
+		ArgumentChecks.isTrue(colour != null);
+
+		this.x = x;
+		this.y = y;
+		this.colour = colour;
+		this.width = width;
+		this.height = height;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public Colour getColour() {
+		return colour;
+	}
+
+	public void draw(PrintStream out) {
+			out.println("Dibujando rectángulo: ( " + this.getX()
+						+ "," + this.getY() + " )"
+						+ " Ancho: " + this.getWidth()
+						+ " Alto: " + this.getHeight()
+						+ " Color: " + this.getColour());
+			
+		}
+	}
+

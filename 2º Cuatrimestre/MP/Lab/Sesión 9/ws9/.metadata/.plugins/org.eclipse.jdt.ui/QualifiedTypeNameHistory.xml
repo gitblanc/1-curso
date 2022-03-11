@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.reader.ParsedLine"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.domain.Newspaper"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.LineNumber"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.comp.Check"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.parsers.InvalidLineFormatException"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.Newsstand"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.NewsStandException"/>
+    <fullyQualifiedTypeName name="uo.mp.util.log.Logger"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.ui.ApplicationException"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.parsers.PublicationParser"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.domain.Magazine"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.domain.Publication"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.exception.AlreadyExistsException"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.exception.NewsStandException"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.exception.InvalidFileNameException"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.util.zip.GZIPInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.utils.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+</qualifiedTypeNameHistroy>

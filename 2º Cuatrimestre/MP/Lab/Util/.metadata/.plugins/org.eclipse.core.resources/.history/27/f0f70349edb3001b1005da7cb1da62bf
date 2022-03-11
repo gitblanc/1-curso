@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package uo.mp2021.util.file;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+/**
+ * @author blanc
+ *
+ */
+public class FileUtil extends BaseFileUtil{
+
+	@Override
+	protected BufferedReader bufferReader1(String inFileName) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected BufferedWriter bufferWriter1(String outFileName) throws FileNotFoundException, IOException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

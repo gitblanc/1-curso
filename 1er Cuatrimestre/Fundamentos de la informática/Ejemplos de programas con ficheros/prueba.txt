@@ -1,0 +1,6 @@
+linea primera
+aqui va otra
+mas cosas
+   con espacios antes
+con espacios despues   
+ultima linea sin terminador

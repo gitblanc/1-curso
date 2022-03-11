@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.sql.rowset.spi.TransactionalWriter"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.util.IBAN"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.util.Lhun"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.exceptions.InvalidIBANException"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.exceptions.InvalidAmountException"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.exceptions.InvalidDateException"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.exceptions.InvalidTransactionException"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.exceptions.InvalidMaxAmountException"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.exceptions.InvalidCreditNumberException"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.exceptions.InvalidLineFormatException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.CurrentAccountTransaction"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.Client"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.validator.TransactionValidator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.Transaction"/>
+    <fullyQualifiedTypeName name="uo.mp.transaction.model.CreditCardTransaction"/>
+    <fullyQualifiedTypeName name="java.io.Console"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package uo.mp.newsstand.service.exception;
+
+/**
+ * @author blanc
+ *
+ */
+public class InvalidFileNameException {
+
+	/**
+	 * 
+	 */
+	public InvalidFileNameException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

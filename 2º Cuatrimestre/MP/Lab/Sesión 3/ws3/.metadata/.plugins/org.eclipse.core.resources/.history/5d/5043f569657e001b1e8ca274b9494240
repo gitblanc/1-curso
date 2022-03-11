@@ -1,0 +1,22 @@
+package uo.mp.s4.dome.service.medialibrary;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class GiveBackTest {
+
+	
+	/*
+	 *Casos
+	 *
+	 * 1 Item es nulo -> salta excepción
+	 * 2 Item no está disponible -> devuelve false
+	 * 3 Item distinto de null y disponible -> devuelve true
+	 */
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

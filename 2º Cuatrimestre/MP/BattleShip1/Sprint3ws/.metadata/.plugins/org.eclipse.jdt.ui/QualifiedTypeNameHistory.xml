@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="board.Board"/>
+    <fullyQualifiedTypeName name="player.Player"/>
+    <fullyQualifiedTypeName name="board.Coordinate"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="square.tests.TestGetNotFiredCoordinates"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.Board"/>
+    <fullyQualifiedTypeName name="util.IO"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.interaction.GameInteractor"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.Coordinate"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.interaction.GamePresenter"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.util.IO"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+</qualifiedTypeNameHistroy>

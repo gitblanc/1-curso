@@ -1,0 +1,64 @@
+package uo.mp.battleship.player;
+
+import java.util.List;
+import java.util.Random;
+
+import uo.mp.battleship.board.Board;
+import uo.mp.battleship.board.Coordinate;
+
+public class ComputerPlayer {
+
+	private Board myShips, myOpponentShips;
+	private String name;
+
+	public ComputerPlayer(String name) {
+		setName(name);
+	}
+
+	private void setName(String name) {
+		if (name != null && name.length() > 0) {
+			this.name = name;
+		} else {
+			this.name = "computer";
+		}
+	}
+
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setMyShips(Board board) {
+		this.myShips = board;
+	}
+
+	public void setOpponentShips(Board board) {
+		this.myOpponentShips = board;
+	}
+
+	public boolean shootAt(Coordinate position) {
+		return myOpponentShips.shootAt(position);
+	}
+
+	public Board getMyShips() {
+		return this.myShips;
+	}
+
+	public boolean hasWon() {
+		return myOpponentShips.isFleetSunk();
+	}
+
+	public Board getOpponentShips() {
+		return this.myOpponentShips;
+	}
+
+	public Coordinate makeChoice() {
+
+		List<Coordinate> coords = myOpponentShips.getNotFiredPositions();
+		Random r = new Random();
+		int x = r.nextInt(coords.size());
+		Coordinate c1 = coords.get(x);
+		return c1;
+	}
+
+}

@@ -1,0 +1,120 @@
+unsigned int Max(unsigned int a, unsigned int b) // a y b son parámetros en la pila,
+// apilados de dcha. a izda.
+{​​​​
+if (a>b)
+return a; // retornado en r0
+else
+return b;
+}​​​​
+void main(void)
+{​​​​
+unsigned int x=5, y=9; // x en r1, y en r2
+unsigned int resultado; // resultado en memoria, dirección 0500h
+
+
+
+resultado=Max(x, y);
+}​​​​
+
+
+
+
+
+principal:
+
+
+
+MOVH R1, 0
+MOVL R1, 5 ; x = 5
+
+
+
+MOVH R2, 0
+MOVL R2, 9 ; y = 9
+
+
+
+; Apilar los parametros en la pila
+; PUSH -> Coloca en la pila - POP -> saca de la pila
+
+
+
+PUSH R2
+PUSH R1
+; Llamamos a la funcion
+CALL Max
+//
+R0 -> resultado de Max
+; INC -> INcrementa el valor de la pila
+; ¿En qué registro está el puntero de la pila? -> R7
+
+
+
+;
+
+
+
+INC R7
+INC R7
+
+
+
+; Coger el resultado de la funcion y guardarlo en resultado
+
+
+
+MOVH R4, 05h
+MOVL R4, 00h
+MOV [R4], R0 ; resultado = Max()
+NOP ; FIN del programa
+
+
+
+
+; ¿Cuantos registros va a usar MAX?
+; R1, R2
+; R6
+
+
+
+Max:
+; Prologo
+
+PUSH R6 ; Guardar el registro que usara el puntero de la pila
+MOV R6, R7
+; Salvaguarda de registros
+
+PUSH R1
+PUSH R2
+
+
+
+; Recuperar los parametros de la pila
+INC R6
+INC R6
+MOV R1, [R6] ; a
+
+
+
+INC R6
+MOV R2, [R6] ; b
+
+
+
+; R1=a y R2 = b
+; Hacemos la compración y colocar en R0 el resultado
+
+
+
+;;; EL CODIGO DE LA COPMARACIÓN
+
+
+
+
+
+;
+; restaurar el estado de la pila
+POP R2
+POP R1
+POP R6
+RET

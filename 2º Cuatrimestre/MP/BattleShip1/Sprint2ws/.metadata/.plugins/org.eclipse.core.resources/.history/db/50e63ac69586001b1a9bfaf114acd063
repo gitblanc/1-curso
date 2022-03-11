@@ -1,0 +1,84 @@
+/**
+ * 
+ */
+package squares;
+
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+public class Ship implements Target {
+	public static final int MIN_SIZE = 1;
+	public static final int MAX_SIZE = 4;
+	
+	private int damage = 0;
+	private int size;
+
+	public Ship(int shipSize) {
+		this.size = shipSize;
+	}
+
+	@Override
+	public int shootAt() {
+		if(isSunk()) {
+			return 2;
+		}
+		else{
+			damage++;
+			return 1;
+		}
+	}
+
+	@Override
+	public boolean hasImpact() {
+		return this.damage > 0;
+	}
+
+	public int size() {
+		return size;
+	}
+
+	public boolean isSunk() {
+		return this.damage == this.size;
+	}
+
+	@Override
+	public char toChar() {
+		switch (size) {
+		case 1:
+			return 'S';
+		case 2:
+			return 'D';
+		case 3:
+			return 'C';
+		default:
+			return 'B';
+		}
+	}
+
+	@Override
+	public char toFiredChar() {
+		if (isSunk()) {
+			return '#';
+		} else {
+			return '*';
+		}
+	}
+
+	/**
+	 * @param the size
+	 */
+	public void setSize(int size) {
+		ArgumentChecks.isTrue(size >= 1);
+		ArgumentChecks.isTrue(size <= 4);
+		this.size = size;
+	}
+
+	public int getDamage() {
+		return damage;
+	}
+
+
+}

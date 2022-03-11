@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package uo.mp.transaction.esceptions;
+
+import Exeception;
+
+/**
+ * @author blanc
+ *
+ */
+public class InvalidAmountException extends Exception {
+
+}

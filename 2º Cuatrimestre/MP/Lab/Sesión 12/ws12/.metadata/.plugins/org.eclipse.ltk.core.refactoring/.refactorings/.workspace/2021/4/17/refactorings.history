@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;mp.battleship.util&apos; to &apos;mp.lab12.util&apos;&#x0D;&#x0A;- Original element: &apos;mp.battleship.util&apos;&#x0D;&#x0A;- Renamed element: &apos;mp.battleship.util&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;mp.battleship.util&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=mp.battleship.util" name="mp.lab12.util" references="true" stamp="1619522351647" version="1.0"/>
+</session>

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\Lab\Sesión 10\ws10\.metadata\.plugins\org.eclipse.jdt.core
+3597367087.index
+1581619216.index
+1540889442.index
+3883950653.index
+4283186910.index

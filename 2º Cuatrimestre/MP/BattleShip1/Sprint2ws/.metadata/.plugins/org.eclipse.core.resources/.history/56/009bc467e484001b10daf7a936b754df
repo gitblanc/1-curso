@@ -1,0 +1,18 @@
+package player;
+
+
+
+public class ComputerPlayer extends Player {
+
+	/**
+	 * Crea un Nuevo objeto y guarda el nombre del jugador. Este nombre debe siempre
+	 * ser diferente de null y cadena vacía; en otro caso, lo denominaremos
+	 * “computer”.
+	 * 
+	 * @param name
+	 */
+	public ComputerPlayer(String name) {
+		setName(name);
+	}
+
+}

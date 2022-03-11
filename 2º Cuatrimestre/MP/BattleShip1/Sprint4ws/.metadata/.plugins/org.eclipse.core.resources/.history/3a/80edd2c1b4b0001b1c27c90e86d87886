@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package uo.mp.battleship.ranking;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+public class GameRanking {
+
+	private List<Score> scores = new ArrayList<>();
+	
+	public void append(Score score) {
+			ArgumentChecks.isTrue(score != null);
+			scores.add(score);
+	}
+	
+	public List<Score> getRanking(){
+		return new ArrayList<Score>(scores);
+	}
+	
+	public List<Score> getRankingFor(String userName){
+		List<Score> puntuations = new ArrayList<>();
+		for(Score s: scores) {
+			if(s.get)
+		}
+	}
+}

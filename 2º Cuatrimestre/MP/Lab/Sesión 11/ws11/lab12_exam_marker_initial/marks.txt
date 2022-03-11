@@ -1,0 +1,8 @@
+Nota de: 20209 = 5.199999999999999
+Nota de: 20210 = 3.9
+Nota de: 20211 = 2.0
+Nota de: 20213 = 3.0
+Nota de: 20214 = 1.5
+Nota de: 20215 = 2.4
+Nota de: test0 = -0.5
+Nota de: test10 = 10.0

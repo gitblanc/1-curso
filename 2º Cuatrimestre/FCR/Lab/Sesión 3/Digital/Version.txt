@@ -1,0 +1,5 @@
+Digital
+
+POM-Version:       1.0-SNAPSHOT
+Build Git Version: v0.23-162-ga624fb4
+Build Time:        2019-11-27 18:43

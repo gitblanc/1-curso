@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+package publicationparser.parse.tests;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+import uo.mp.newsstand.domain.Magazine;
+import uo.mp.newsstand.domain.Publication;
+import uo.mp.newsstand.service.parsers.PublicationParser;
+
+/**
+ * @author blanc
+ *
+ */
+public class ParseTests {
+
+	/**
+	 * Casos:
+	 * 
+	 * 1 Recibe lista vacía
+	 * 2 Recibe cadena para magazine correcta
+	 * 3 Recibe cadena para newspaper correcta
+	 * 4 Ambas cadenas correctas
+	 * 5 Línea correcta
+	 * 6 Línea incorrecta
+	 */
+	@Test
+	(expected = IllegalArgumentException.class)
+	public void testParse1() {
+		PublicationParser pp = new PublicationParser();
+		List<String> stringList = new ArrayList<>();
+		pp.parse(stringList);
+	}
+	
+	@Test
+	public void testParse2() {
+		PublicationParser pp = new PublicationParser();
+		List<String> stringList = new ArrayList<>();
+		stringList.add("magazine patata   32  32  76"); 
+		stringList.add("magazine aceituna   32  31  76"); 
+		assertEquals(2, pp.parse(stringList).size());
+	}
+
+}

@@ -1,0 +1,17 @@
+1615720830554	Rename package 'uo.mp.battleship'
+1615720839034	Rename package 'uo.mp.battleship.board'
+1615720848285	Rename package 'uo.mp.battleship.game'
+1615720856859	Rename package 'uo.mp.battleship.interaction'
+1615720865102	Rename package 'uo.mp.battleship.player'
+1615720874151	Rename package 'uo.mp.util'
+1615720888947	Rename package 'mp.battleship.sprint1.skeleton.board.tests'
+1615721021130	Copy package
+1615721026479	Delete element
+1615721200369	Encapsulate field 'size'
+1615721960077	Encapsulate field 'water'
+1615722016890	Delete element
+1615722051432	Encapsulate field 'ship'
+1615722080706	Encapsulate field 'size'
+1615731487169	Delete element
+1615735058133	Encapsulate field 'ships'
+1615739758339	Extract superclass 'Player'

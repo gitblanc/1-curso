@@ -1,0 +1,6 @@
+1618742528464	Rename package 'uo.mp.battleship.squares'
+1618743703228	Encapsulate field 'presenter'
+1618743718597	Encapsulate field 'interactor'
+1618743724670	Encapsulate field 'session'
+1618743729344	Encapsulate field 'logger'
+1618743733384	Encapsulate field 'ranking'

@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package board;
+
+/**
+ * @author blanc
+ *
+ */
+public class Ship {
+	private int size;
+	private 
+	
+	public Ship(int shipSize) {
+		
+	}
+	
+	/**
+	 * @return the size
+	 */
+	public int getSize() {
+		return size;
+	}
+	
+	
+}

@@ -1,0 +1,28 @@
+package uo.mp.transaction.validator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import uo.mp.transaction.model.Transaction;
+
+public class TransactionValidator {
+	private List<Transaction> valids = new ArrayList<>();
+	private List<Transaction> invalids = new ArrayList<>();
+
+	public void add(List<Transaction> trxs) {
+		// TODO 
+	}
+
+	public void validate() {
+		// TODO 
+	}
+
+	public List<Transaction> getInvalidTransactions() {
+		return new ArrayList<>(invalids);
+	}
+
+	public List<Transaction> getValidTransactions() {
+		return new ArrayList<>(valids);
+	}
+
+}

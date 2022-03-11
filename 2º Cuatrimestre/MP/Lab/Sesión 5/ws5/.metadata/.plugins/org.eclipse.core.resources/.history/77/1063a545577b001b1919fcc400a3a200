@@ -1,0 +1,5 @@
+package uo.mp.s5.figure.drawable;
+
+public interface Drawablee {
+
+}

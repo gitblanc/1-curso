@@ -1,0 +1,30 @@
+package turnselector.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import game.TurnSelector;
+import player.ComputerPlayer;
+import player.HumanPlayer;
+import player.Player;
+
+/**
+ * @author blanc
+ *
+ */
+public class NextTest {
+
+	Player human = new HumanPlayer("Patata");
+	Player computer = new ComputerPlayer("BMO");
+	TurnSelector t1 = new TurnSelector(human, computer);
+	
+	@Test
+	public void testNext1() {
+		t1.next();
+		assertEquals(human, t1.getTurn());
+		t1.next();
+		assertEquals(computer, t1.getTurn());
+	}
+
+}

@@ -1,0 +1,22 @@
+﻿Descomprime el archivo alu4.zip para extraer los archivos de la ALU de 4 bits, que tendrás que utilizar con el programa Digital.
+Ambos archivos están disponibles en el campus virtual. 
+
+Realiza las operaciones que se indican en el simulador y responde en papel siguiendo las instrucciones del enunciado.
+
+******************************************************************
+
+Pregunta 1:
+
+Operando 1: (-3)  
+Operando 2: 4  
+Operación:  RESTA   
+
+@--- 1 Responde en papel la Pregunta 1 con los valores pedidos.@
+
+Pregunta 2:
+
+Operando 1: 2  
+Operando 2: 8  
+Operación:  OR   
+
+@--- 2 Responde en papel la Pregunta 2 con los valores pedidos.@

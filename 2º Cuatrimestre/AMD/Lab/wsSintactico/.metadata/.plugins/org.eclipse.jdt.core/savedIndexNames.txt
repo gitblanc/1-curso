@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\AMD\Lab\wsSintactico\.metadata\.plugins\org.eclipse.jdt.core
+920685508.index
+3883950653.index
+2368342417.index
+1672249308.index
+1691896857.index

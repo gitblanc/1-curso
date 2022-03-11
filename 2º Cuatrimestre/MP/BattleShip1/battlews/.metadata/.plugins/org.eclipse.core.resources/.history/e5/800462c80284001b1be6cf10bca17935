@@ -1,0 +1,61 @@
+package uo.mp.battleship.player;
+
+import uo.mp.battleship.board.Board;
+import uo.mp.battleship.board.Coordinate;
+import uo.mp.util.IO;
+import uo.mp2021.util.checks.ArgumentChecks;
+
+public class HumanPlayer {
+
+	private Board myShips, myOpponentShips;
+	private String name;
+
+	public HumanPlayer(String name) {
+		setName(name);
+	}
+
+	private void setName(String name) {
+		if (name != null && name.length() > 0) {
+			this.name = name;
+		} else {
+			this.name = "user";
+		}
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setMyShips(Board board) {
+		ArgumentChecks.isTrue(board != null);
+		this.myShips = board;
+	}
+
+	public void setOpponentShips(Board board) {
+		ArgumentChecks.isTrue(board != null);
+		this.myOpponentShips = board;
+	}
+
+	public boolean shootAt(Coordinate position) {
+		ArgumentChecks.isTrue(position != null);
+		return myOpponentShips.shootAt(position);
+	}
+
+	public Board getMyShips() {
+		return this.myShips;
+	}
+
+	public Board getOpponentShips() {
+		return this.myOpponentShips;
+	}
+
+	public boolean hasWon() {
+		return myOpponentShips.isFleetSunk();
+	}
+
+	public Coordinate makeChoice() {
+		return IO.readCoordinates();
+
+	}
+
+}

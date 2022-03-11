@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package board;
+
+import squares.Ship;
+import squares.Water;
+
+/**
+ * @author blanc
+ *
+ */
+public class Square {
+
+	
+	private boolean isShot;
+	
+	public int ShootAt() {
+		if()
+	}
+	
+	public boolean isShot() {
+		return this.isShot;
+	}
+
+	public boolean hasImpact() {
+		return true;
+		
+	}
+}

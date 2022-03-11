@@ -1,0 +1,98 @@
+ClearTests (done)
+	Clear an empty list has no effect
+	Clear a list with one element leaves the list empty
+	Clear a list with several elements leaves the list empty
+AddInPositionTests
+	Add at position 0 in an empty list adds the element
+	Add at position 0 in a list with several elements adds the element and moves the rest one position to the right
+	Add on an intermediate position in a list adds the element and moves the rest on position to the right
+	Add at the last position in a list with elements adds the element
+	Add in the position after the last in a list with elements adds the element
+	Try at add at a negative position throws IndexOutOfBoundsException
+	Try to add at a position > size() throws IndexOutOfBoundsException
+	Try to add a null trhows IllegalArgumentException
+AddInLastPositionTests
+	Add in an empty list adds the element and returns true
+	Add in a list with several elements adds the element at the last position and returns true
+	Add in a cleared list add the element at the first position and returns true
+	A repeated element can be added
+	Try to add a null throws IllegalArgumentException
+ContainsTests
+	An empty list does not contain an arbitrary element
+	A list with several elements does not contains another
+	A list with one element contains the element
+	A list with several elements contains all its elements
+	An empty list does not contains null
+	A list with elements does not contains null
+EqualsTests
+	Two empty lists with type ArrayList are equals
+	Two empty lists with type LinkedList are equals
+	Two empty lists with both types are equals
+	Two lists with type ArrayList with the same elements in same positions are equals
+	Two lists with type LinkedList with the same elements in same positions are equals
+	Two lists with both types with the same elements in same positions are equals
+	Two lists with type ArrayList with the same elements in different positions are not equals
+	Two lists with type LinkedList with the same elements in different positions are not equals
+	Two lists with both types with the same elements in different positions are not equals
+	Two lists with type ArrayList with different elements are not equals
+	Two lists with type LinkedList with different elements are not equals
+	Two lists with both types with different elements are not equals
+SetTests
+	Set the 0 position in a list with one element changes the value and returns the previous value
+	Set the n position in a list with several elements changes the value at position n and returns the previous value at that position
+	Try to set the 0 position in an empty list throws IndexOutOfBoundsException
+	Try to set the -1 position in an empty list throws IndexOutOfBoundsException
+	Try to set the size() position in an empty list throws IndexOutOfBoundsException
+	Try to set the -1 position in a list with elements throws IndexOutOfBoundsException
+	Try to set the size() position in a list with elements throws IndexOutOfBoundsException
+GetTests
+	Get returns every element on an list with elements
+	Try to get 0 position on an empty list throws IndexOutOfBoundsException
+	Try to get -1 position on an empty list throws IndexOutOfBoundsException
+	Try to get -1 position on an list with elements throws IndexOutOfBoundsException
+	Try to get the size() position on an list with elements throws IndexOutOfBoundsException
+HashCodeTests
+	The hashCode of an empty list is 1
+	The hashCode of a non empty list is the computed hashCode
+	The hashCode of two equals lists of the same type are the same
+	The hashCode of two equals lists of different type are the same
+	The hashCode of two lists with the same elements in different positions are different
+IndexOfTests
+	The index of non existing element is -1
+	The index of null is -1
+	The index of every element in the list is the correct one
+	In a list with repeated elements the indexOf that element returns the position of the first occurrence
+IsEmptyTests
+	An new list is empty
+	A cleared list is empty
+	A list with with one element is not empty
+	A list with more than one element is not empty
+RemoveFromPositionTests
+	Remove from 0 position of a list with one element returns the removed element and the list is empty
+	Remove from 0 position of a non empty list returns the removed element and the element is removed
+	Remove from 0 position of a non empty list move the rest of elements one position to the left
+	Remove from an existing position returns the removed element and the element is removed
+	Remove from an existing position move the elements to the right one position to the left
+	Remove from the last position returns the removed element and the element is removed
+	Try to remove from -1 position throws IndexOutOfBoundsException
+	Try to remove from 0 position of an empty list throws IndexOutOfBoundsException
+	Try to remove from the size() position of an empty list throws IndexOutOfBoundsException
+	Try to remove from the size() position of an non empty list throws IndexOutOfBoundsException
+RemoveObjectTests
+	Remove a existing object on an list with one element returns true an the list is empty
+	Remove a existing object on an list with several elements returns true an the element is removed
+	Remove a non existing object on an empty list returns false
+	Remove a non existing object on an list with elements returns false and the list is not changed
+	Remove an element from a list with that element repeated returns true and just the first occurrence of the element is removed
+	Try to remove null throws IllegalArgumentException
+SizeTests
+	An empty list has size 0
+	A list with one element has size 1
+	A list with several elements has the right size
+	The size() increases by one after inserting one element
+	The size() decreases by one after removing one element
+ToStringTests
+	An empty list has "[]" as toString
+	An list with one element "A" has "[A]" as toString
+	A list with two elements "A" and "B" has "[A, B]" as toString
+

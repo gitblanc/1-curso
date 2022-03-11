@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package squares;
+
+import board.Square;
+
+/**
+ * @author blanc
+ *
+ */
+public class Water implements Target{
+	
+	public boolean hasImpact() {
+		return false;
+	}
+	
+	public char toChar() {
+		return ' ';
+	}
+	
+	public char toFiredChar() {
+		return '.';
+	}
+	
+
+	/**
+	 * @return the water
+	 */
+	public Square getWater() {
+		return water;
+	}
+
+	@Override
+	public int ShootAt() {
+		return 0;
+	}
+}

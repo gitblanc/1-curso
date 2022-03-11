@@ -1,0 +1,60 @@
+package uo.mp.battleship.board;
+
+public class Coordinate {
+	private int col;
+	private int row;
+	
+
+	public Coordinate(int col, int row) {
+		setCol(col);
+		setRow(row);
+	}
+
+	public Coordinate(char col, int row) {
+		setCol(col - 65);	//por el ASCII (A = 65)
+		setRow(row - 1);
+	}
+
+	public int getCol() {
+		return this.col;
+	}
+
+	public int getRow() {
+		return this.row;
+	}
+	
+	@Override
+	public String toString() {
+		String aucol = "Coordenada [ col = " + getCol() + " , row = " + getRow() +" ]";
+		return aucol;
+	}
+
+	public String toUserString() {
+		return (char) (this.col + 65) + " - " + (this.row + 1);
+	}
+
+	private void setCol(int col) {
+		this.col = col;
+	}
+
+	private void setRow(int row) {
+		this.row = row;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Coordinate other = (Coordinate) obj;
+		if (col != other.col)
+			return false;
+		if (row != other.row)
+			return false;
+		return true;
+	}
+	
+}

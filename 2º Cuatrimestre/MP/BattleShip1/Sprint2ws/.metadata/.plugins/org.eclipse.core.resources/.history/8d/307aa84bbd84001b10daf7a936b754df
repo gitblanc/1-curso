@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+package squares;
+
+import board.Square;
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+public class Ship {
+	public static final int MIN_SIZE = 1;
+	public static final int MAX_SIZE = 4;
+	
+	private Square ship;
+	private int size;
+	
+	public Ship(int shipSize) {
+		this.ship = new Ship(shipSize);
+	}
+	
+	public int shootAt() {
+		return ship.ShootAt();
+	}
+	
+	public boolean hasImpact() {
+		return this.ship.hasImpact();
+	}
+	
+
+
+
+	/**
+	 * @param the size
+	 */
+	public void setSize(int size) {
+		ArgumentChecks.isTrue(size >= 1);
+		ArgumentChecks.isTrue(size <= 4);
+		this.size = size;
+	}
+	
+}

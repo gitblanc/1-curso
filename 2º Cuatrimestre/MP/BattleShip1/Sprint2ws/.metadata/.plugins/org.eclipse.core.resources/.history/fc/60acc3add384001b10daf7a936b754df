@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package board;
+
+import squares.Target;
+
+/**
+ * @author blanc
+ *
+ */
+public class Square {
+
+	private Target target;
+	private boolean isShot;
+	
+	public int ShootAt() {
+		return this.target.shootAt();
+	}
+	
+	public boolean isShot() {
+		return this.isShot;
+	}
+
+	public boolean hasImpact() {
+		return true;
+		
+	}
+}

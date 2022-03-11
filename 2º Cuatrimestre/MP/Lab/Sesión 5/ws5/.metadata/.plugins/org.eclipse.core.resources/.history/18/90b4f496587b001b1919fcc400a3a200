@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package uo.mp.s5.shapes;
+
+import java.io.PrintStream;
+
+
+/**
+ * @author blanc
+ *
+ */
+public class Circle extends Shape{
+
+	private int radius;
+
+	public Circle(int x, int y, int radius, Colour colour) {
+		super(x, y, colour);
+		ArgumentChecks.isTrue(radius >= 0);
+		this.radius = radius;
+	}
+
+	public int getRadius() {
+		return radius;
+	}
+
+	@Override
+	public void draw(PrintStream out) {
+		out.println("Dibujando círculo: ( " + this.getX()
+		+ "," + this.getY() + " )" + " Radio: " + this.getRadius()
+		+ " Color: " + this.getColour());
+
+
+		
+	}
+}

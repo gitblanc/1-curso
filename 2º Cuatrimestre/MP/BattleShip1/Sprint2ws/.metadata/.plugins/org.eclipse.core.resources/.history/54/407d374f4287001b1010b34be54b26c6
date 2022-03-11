@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package squares;
+
+/**
+ * @author blanc
+ *
+ */
+public class Water implements Target {
+	
+	@Override
+	public boolean hasImpact() {
+		return false;
+	}
+
+	@Override
+	public char toChar() {
+		return ' ';
+	}
+
+	@Override
+	public char toFiredChar() {
+		return '.';
+	}
+
+	@Override
+	public int shootAt() {
+		return 0;
+	}
+}

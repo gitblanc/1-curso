@@ -1,0 +1,5 @@
+﻿  1-Enteros.cpp
+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 2\1-Enteros\1-Enteros.cpp(28,27): warning C4307: "*": desbordamiento de constante integral firmado
+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 2\1-Enteros\1-Enteros.cpp(8,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 2\1-Enteros\1-Enteros.cpp(10,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  1-Enteros.vcxproj -> C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 2\1-Enteros\Debug\1-Enteros.exe

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.OrientationRequested"/>
+    <fullyQualifiedTypeName name="uo.mp.lab11.person.Person"/>
+    <fullyQualifiedTypeName name="uo.mp.lab11.person.PersonBySurnameNameComparator"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.questions.Question"/>
+    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.questions.QuestionParser"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.parsers.QuestionParser"/>
+    <fullyQualifiedTypeName name="uo.mp.newsstand.service.parsers.InvalidLineFormatException"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="uo.mp.util.log.Logger"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.marks.StudentMark"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.studentexams.StudentExam"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.parsers.StudentParser"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.marks.StudentMarkByValue"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.questions.Choice"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.questions.Value"/>
+    <fullyQualifiedTypeName name="uo.mp.lab12.questions.Gap"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

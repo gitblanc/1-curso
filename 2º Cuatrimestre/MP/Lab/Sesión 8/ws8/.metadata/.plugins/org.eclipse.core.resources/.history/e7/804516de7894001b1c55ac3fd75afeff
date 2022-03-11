@@ -1,0 +1,51 @@
+/**
+ * 
+ */
+package queue;
+
+import static org.junit.Assert.*;
+
+import java.util.EmptyStackException;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.mp.collections.impl.LinkedList;
+
+/**
+ * @author blanc
+ * @param <T>
+ *
+ */
+public class DequeueTests<T> {
+
+	private Object obj;
+	private Object obj1;
+	private Object obj2;
+	
+	/**
+	 * 1 Test dequeue sobre una cola vacía (empty queue)
+	 * 2 Test el tamaño de la cola después de dequeue sobre una cola no vacía
+	 * 3 Test empty después de la operación realizar dequeue sobre una cola no vacía
+	 * 4 Test la cabeza de la cola después de realizar la operación dequeue
+	 * 5 Test la cola desspués de realziar la operación dequeue 
+	 */
+	
+	@Before
+	public void setUp() throws Exception {
+		obj = new Object();
+		obj1 = new Object();
+		obj2 = new Object();
+	}
+	
+	@Test
+	public void testDequeue1() {
+		try {
+			LinkedList<T> l1 = new LinkedList<T>();
+			l1.dequeue();
+			fail("Esperaba fallo");
+			}
+			catch(EmptyStackException e) {}
+	}
+
+}

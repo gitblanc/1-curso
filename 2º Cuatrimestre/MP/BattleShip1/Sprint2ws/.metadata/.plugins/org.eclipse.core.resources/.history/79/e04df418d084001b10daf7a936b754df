@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package board;
+
+/**
+ * @author blanc
+ *
+ */
+public interface Target {
+
+}

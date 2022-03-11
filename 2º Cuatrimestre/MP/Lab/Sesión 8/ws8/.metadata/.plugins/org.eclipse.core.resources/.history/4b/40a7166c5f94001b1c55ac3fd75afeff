@@ -1,0 +1,30 @@
+package uo.mp.collections.stack;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class IsEmptyTest {
+
+	private Object obj;
+	private Object obj1;
+	private Object obj2;
+	
+	/**
+	 * 1 Test empty sobre una nueva cola (new queue)
+	 * 2 Test empty sobre una cola no vacía
+	 * @throws Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		obj = new Object();
+		obj1 = new Object();
+		obj2 = new Object();
+	}
+	@Test
+	public void testIsEmpty() {
+		
+	}
+
+}

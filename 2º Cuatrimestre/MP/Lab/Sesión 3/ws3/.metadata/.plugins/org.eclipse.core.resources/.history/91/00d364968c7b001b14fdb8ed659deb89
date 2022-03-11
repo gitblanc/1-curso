@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package uo.mp.s4.dome.model;
+
+/**
+ * @author blanc
+ *
+ */
+public class Book extends Item{
+	private
+}

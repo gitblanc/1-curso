@@ -1,0 +1,10 @@
+choice	1.0	a
+choice	1.0	b
+gap	0.5	stuff
+gap	0.5	computer
+value	1.5	12.5
+value	1.5	100.0
+gap	1.0	polymorphism
+value	1.0	256.0
+choice	0.5	c
+gap	1.5	abstract

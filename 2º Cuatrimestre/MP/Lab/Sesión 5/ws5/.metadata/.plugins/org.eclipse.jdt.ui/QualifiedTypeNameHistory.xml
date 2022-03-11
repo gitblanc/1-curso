@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.w3c.dom.css.Rect"/>
+    <fullyQualifiedTypeName name="uo.mp.s5.shapes.Shape"/>
+    <fullyQualifiedTypeName name="uo.mp.s5.figure.drawable.Drawable"/>
+    <fullyQualifiedTypeName name="java.awt.Canvas"/>
+    <fullyQualifiedTypeName name="java.awt.Rectangle"/>
+    <fullyQualifiedTypeName name="uo.mp.s5.figure.drawable.Canvas"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="uo.mp.s5.shapes.Rectangle"/>
+    <fullyQualifiedTypeName name="uo.mp.s5.shapes.Circle"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="uo.mp.s5.shapes.Colour"/>
+    <fullyQualifiedTypeName name="uo.mp.s5.shapes.Triangle"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,13 @@
+package uo.mp.s5.figure.drawable;
+S
+
+public interface Drawable {
+	/**
+	 * @author blanc
+	 */
+
+
+	public void draw(PrintStream out);
+	
+
+}

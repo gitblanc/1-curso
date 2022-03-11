@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package uo.mp.collections.stack;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * @author blanc
+ *
+ */
+public class PushTests {
+
+	private Object obj;
+	private Object obj1;
+	private Object obj2;
+	/**
+	 * 1 Test el tamaño de la pila después de realizar la operación push 
+	 * 2 Test empty  después de realizar la operación push 
+	 * 3 Test el tope de la pila despues de realizar la operación push
+	 * @throws Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		obj = new Object();
+		obj1 = new Object();
+		obj2 = new Object();
+	}
+	@Test
+	public void testPush() {
+		
+	}
+
+}

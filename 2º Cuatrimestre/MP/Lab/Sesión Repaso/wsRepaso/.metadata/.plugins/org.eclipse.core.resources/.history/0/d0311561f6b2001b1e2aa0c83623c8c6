@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+package uo.mp.transaction.model;
+
+/**
+ * @author blanc
+ *
+ */
+public class CreditCardTransaction extends Transaction implements Comparable<String>{
+	
+	private String vencimiento;
+	private double maxQuant;
+
+	public CreditCardTransaction(String date, String number, double amount, String description) {
+		super(date, number, amount, description);
+	}
+
+	@Override
+	public void validate() {
+		if(this.date.compareTo(this.vencimiento) == 1) {
+			throw new InvalidDateException(this.date + this.vencimiento);
+		}
+
+	}
+
+	@Override
+	public String serialize() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int compareTo(String o) {
+		String[] cad = o.split("/");
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package squares;
+
+/**
+ * @author blanc
+ *
+ */
+public class Water {
+	private int[][] water;
+	
+	public int shootAt() {
+		return 0;
+	}
+	
+	public boolean hasImpact() {
+		return false;
+	}
+	
+	public char toChar() {
+		return ' ';
+	}
+	
+	public char toFiredChar() {
+		return '.';
+	}
+}

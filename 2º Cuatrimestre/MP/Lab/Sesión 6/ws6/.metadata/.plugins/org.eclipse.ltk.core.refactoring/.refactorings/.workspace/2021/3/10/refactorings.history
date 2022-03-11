@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;greenhouse_initial_v0&apos; to &apos;blanco_bielsa_tarea_session6_greenhouse&apos;&#x0D;&#x0A;- Original element: &apos;greenhouse_initial_v0&apos;&#x0D;&#x0A;- Renamed element: &apos;greenhouse_initial_v0&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;greenhouse_initial_v0&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=greenhouse_initial_v0" name="blanco_bielsa_tarea_session6_greenhouse" references="true" stamp="1615384720793" version="1.0"/>
+</session>

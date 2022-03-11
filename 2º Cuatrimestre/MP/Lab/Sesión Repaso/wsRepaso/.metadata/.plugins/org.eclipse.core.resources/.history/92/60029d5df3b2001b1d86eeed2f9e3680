@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package uo.mp.transaction.model;
+
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+public class CurrentAccountTransaction extends Transaction {
+	
+    private Client client;
+    
+	public CurrentAccountTransaction(String date, String number, double amount, String description, Client client) {
+		super(date, number, amount, description);
+		this.setClient(client);
+	}
+
+	@Override
+	public void validate() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String serialize() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private void setClient(Client client) {
+		ArgumentChecks.isTrue(client != null);
+		this.client = client;
+	}
+
+}

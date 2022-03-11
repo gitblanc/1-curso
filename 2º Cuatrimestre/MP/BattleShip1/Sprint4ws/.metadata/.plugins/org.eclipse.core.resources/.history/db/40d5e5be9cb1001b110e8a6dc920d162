@@ -1,0 +1,113 @@
+/**
+ * 
+ */
+package uo.mp.battleship.console;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
+
+import uo.mp.battleship.ranking.Score;
+import uo.mp.battleship.session.GameLevel;
+import uo.mp.battleship.session.SessionInteractor;
+import uo.mp.battleship.util.IO;
+import uo.mp.battleship.util.exceptions.InvalidOptionException;
+
+/**
+ * @author blanc
+ *
+ */
+public class ConsoleSessionInteractor implements SessionInteractor {
+
+	@Override
+	public GameLevel askGameLevel() {
+		do {
+			gameLevel();
+			BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+			char option = (char) keyboard.read();
+			switch (option) {
+			case 'S':
+			case 's':
+				return GameLevel.SEA;
+			case 'O':
+			case 'o':
+				return GameLevel.OCEAN;
+			case 'P':
+			case 'p':
+				return GameLevel.PLANET;
+			default:
+				throw new IOException("Opción de nivel no válida");
+			}
+		}catch(IOException e){
+				showFatalErrorMessage(e.getMessage());
+			}
+		while(true);
+		}
+	
+		
+
+	private void gameLevel() {
+		System.out.println("Option?");
+		System.out.println("Level? (S)ea, (O)cean, (P)lanet");
+		
+	}
+
+	@Override
+	public String askUserName() {
+		return IO.readName();
+
+	}
+
+	@Override
+	public int askNextOption() {
+		try {
+			return IO.askNextOption();
+		} catch (IOException e) {
+			showFatalErrorMessage(e.getMessage());
+		}
+
+	}
+
+	@Override
+	public boolean askDebugMode(){
+		return IO.askDebugMode();
+	}
+
+	@Override
+	public boolean doYouWantToRegisterYourScore() {
+		return IO.askScoreRegister();
+	}
+
+	@Override
+	public void showRanking(List<Score> ranking) {
+		System.out.println("Date\tHour\tLevel\tRes\tTime\n");
+		for (Score s : ranking) {
+			System.out.println(s.toString());
+		}
+
+	}
+
+	@Override
+	public void showPersonalRanking(List<Score> ranking) {
+		System.out.println("Name\tDate\tHour\tLevel\tRes\tTime\n");
+		for (Score s : ranking) {
+			System.out.println(s.toPersonalString());
+		}
+
+	}
+
+	@Override
+	public void showErrorMessage(String message) {
+		System.out.println(message);
+
+	}
+
+	@Override
+	public void showFatalErrorMessage(String message) {
+		System.out.println(message);
+
+	}
+
+
+}

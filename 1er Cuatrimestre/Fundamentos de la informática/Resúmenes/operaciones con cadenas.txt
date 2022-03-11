@@ -1,0 +1,37 @@
+Funciones
+
+len()
+str()
+chr()
+ord()
+max()
+min()
+list()
+sorted()
+
+Operadores
+
++
+*
+in
+[a]  (si es negativo indica empezando por el final)
+[a:b]
+[a:b:c]
+[a:]
+[:b]
+[:]
+[::2]
+[1::2]
+[::-1]
+> >= < <= == !=
+
+Métodos
+
+.split()
+.join()
+.find()
+.count()
+.strip()
+.lstrip()
+.rstrip()
+.replace(,)

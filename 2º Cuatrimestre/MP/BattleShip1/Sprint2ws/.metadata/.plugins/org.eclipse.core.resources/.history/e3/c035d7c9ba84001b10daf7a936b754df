@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+package squares;
+
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+public class Ship {
+
+	private int[][] ship;
+	private int size;
+	
+	public Ship(int shipSize) {
+		
+	}
+	
+	/**
+	 * @return the ship
+	 */
+	public int[][] getShip() {
+		return ship;
+	}
+
+
+
+	/**
+	 * @param the size
+	 */
+	public void setSize(int size) {
+		ArgumentChecks.isTrue(size >= 1);
+		ArgumentChecks.isTrue(size <= 4);
+		this.size = size;
+	}
+	
+}

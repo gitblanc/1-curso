@@ -1,0 +1,7 @@
+1619254559729	Extract method 'checkPuntuation'
+1619254593619	Encapsulate field 'value'
+1619256941041	Encapsulate field 'student'
+1619256946786	Encapsulate field 'value'
+1619259500686	Move compilation unit
+1619280955133	Rename type 'StuderntMarkByValue'
+1619283168513	Delete element

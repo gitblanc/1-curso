@@ -1,0 +1,6 @@
+﻿  2-Reales.cpp
+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 3\2-Reales\2-Reales.cpp(6,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 3\2-Reales\2-Reales.cpp(7,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 3\2-Reales\2-Reales.cpp(8,35): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 3\2-Reales\2-Reales.cpp(16,11): warning C4309: 'inicializando': truncamiento de valor constante
+  2-Reales.vcxproj -> C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\Lab\Sesión 3\2-Reales\Debug\2-Reales.exe

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.collections.impl.LinkedList"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.collections.impl.ArrayList"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.Node"/>
+    <fullyQualifiedTypeName name="javax.naming.directory.SearchControls"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.collections.List"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.collections.impl.Node"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.setting.Settings"/>
+    <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.NoSuchElementChecks"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.List"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.impl.ArrayList"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.impl.AbstractList"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.Queue"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.Stack"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.impl.LinkedList"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="java.util.EmptyStackException"/>
+    <fullyQualifiedTypeName name="queue.DequeueTests"/>
+    <fullyQualifiedTypeName name="queue.EnqueueTests"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.testcases.IsEmptyTests"/>
+    <fullyQualifiedTypeName name="queue.PeekTests"/>
+    <fullyQualifiedTypeName name="uo.mp.collections.testcases.SizeTests"/>
+</qualifiedTypeNameHistroy>

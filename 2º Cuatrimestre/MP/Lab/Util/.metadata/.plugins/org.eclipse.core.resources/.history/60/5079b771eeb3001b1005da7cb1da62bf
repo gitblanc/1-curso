@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package uo.mp2021.util.log;
+
+/**
+ * @author blanc
+ *
+ */
+public class Logger {
+
+	/**
+	 * 
+	 */
+	public Logger() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package mp.battleship.sprint1.skeleton.board.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+/**
+ * @author blanc
+ *
+ */
+class TestIsFleetSunk {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

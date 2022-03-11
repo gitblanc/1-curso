@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package mp.battleship.sprint1.skeleton.board.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * @author blanc
+ *
+ */
+public class IsFleetSunkTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

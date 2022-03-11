@@ -1,0 +1,25 @@
+package uo.mp.s4.dome.service.medialibrary;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import uo.mp.s4.dome.model.Cd;
+
+public class BorrowTest {
+
+	/*
+	 * Casos
+	 * 
+	 * 1 Parámetro nulo -> devuelve null
+	 * 2 Item no está disponible -> devuelve null
+	 * 3 Item disponible y distinto de null -> se presta y devuelve el item
+	 */
+	
+	@Test
+	public void testBorrow1() {
+		Cd cd1 = null;
+		assertNull(cd1.borrow());
+	}
+
+}

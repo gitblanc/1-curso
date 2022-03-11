@@ -1,0 +1,5 @@
+package uo.mp.s4.dome.model;
+
+public interface Borrowable {
+
+}

@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package uo.mp.transaction.model;
+
+/**
+ * @author blanc
+ *
+ */
+public class CreditCardTransaction extends Transaction{
+	
+	private String vencimiento;
+	private double maxQuant;
+
+	public CreditCardTransaction(String date, String number, double amount, String description) {
+		super(date, number, amount, description);
+	}
+
+	@Override
+	public void validate() {
+		if(this.date.compareTo(this.vencimiento) == 1) {
+			throw new InvalidDateException(this.date + this.vencimiento);
+		}
+
+	}
+
+	@Override
+	public String serialize() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

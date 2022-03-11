@@ -1,0 +1,103 @@
+package uo.mp.battleship.util;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+import uo.mp.battleship.board.Coordinate;
+import uo.mp.battleship.session.GameLevel;
+import uo.mp.battleship.util.exceptions.InvalidOptionException;
+
+public class IO {
+
+	private static Scanner reader = new Scanner(System.in);
+
+	public static Coordinate readCoordinates() {
+		System.out.print("Col (letter): ");
+
+		reader = new Scanner(System.in);
+
+		String c = reader.next();
+		int x = c.toUpperCase().charAt(0) - 'A';
+
+		System.out.print("Row (number): ");
+		reader = new Scanner(System.in);
+
+		int y = reader.nextInt() - 1;
+
+		return new Coordinate(x, y);
+	}
+
+	public static void display(String string) {
+		System.out.println(string);
+
+	}
+
+	public static String readName() throws IOException {
+		System.out.print("Player name?");
+		BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+		String line = keyboard.readLine();
+		return line;
+	}
+
+	public static int askNextOption() throws IOException {
+			menu();
+			int option = reader.nextInt();
+			return option;
+	}
+
+	/**
+	 * Método que genera un menú
+	 */
+	public static void menu() {
+		System.out.println("Available options:");
+		System.out.println("  1- Play a new game");
+		System.out.println("  2- Show my results");
+		System.out.println("  3- Show all results");
+		System.out.println("  0- Exit");
+		System.out.println();
+		System.out.println("Option?");
+	}
+
+	
+
+	public static boolean askDebugMode() throws IOException, InvalidOptionException {
+		System.out.println("Do you want to play in debug mode?");
+		System.out.println("(y)es, (n)o");
+		BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+		char option = (char) keyboard.read();
+
+		switch (option) {
+		case 'y':
+		case 'Y':
+			return true;
+		case 'n':
+		case 'N':
+			return false;
+		default:
+			throw new InvalidOptionException("Opción de modo no válida");
+		}
+
+	}
+
+	public static boolean askScoreRegister() throws IOException, InvalidOptionException {
+		System.out.println("Do you want to store your score?");
+		System.out.println("(y)es, (n)o");
+		BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+		char option = (char) keyboard.read();
+
+		switch (option) {
+		case 'y':
+		case 'Y':
+			return true;
+		case 'n':
+		case 'N':
+			return false;
+		default:
+			throw new InvalidOptionException("Opción de guardado de puntuación " + "no válida");
+		}
+
+	}
+
+}

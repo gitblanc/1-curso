@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;uo.mp.s4.dome.model.Book.isAvailable&apos; in &apos;uo.mp.s4.dome.model.Book&apos;&#x0D;&#x0A;- Original project: &apos;blanco_bielsa_eduardo_session4_task_dome&apos;&#x0D;&#x0A;- Original element: &apos;uo.mp.s4.dome.model.Book.isAvailable&apos;&#x0D;&#x0A;- Getter method name: &apos;isAvailable&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;isAvailable&apos;" flags="589830" getter="isAvailable" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;uo.mp.s4.dome.model{Book.java[Book^isAvailable" insertion="8" stamp="1614885679136" version="1.0" visibility="1"/>
+</session>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.Item"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.service.MediaLibrary"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.Dvd"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.Platform"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.social_media.model.Photo"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.social_media.model.Message"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.social_media.ui.SocialMedia"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.social_media.model.Post"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.cd.AllTests"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.dvd.AllTests"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.videogame.ConstructorTest"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.service.medialibrary.AllTests"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.Cd"/>
+    <fullyQualifiedTypeName name="uo.mp.s3.dome.model.VideoGame"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.social_media.model.Photo"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.social_media.model.Message"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.dome.model.Dvd"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.dome.model.VideoGame"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.dome.model.Platform"/>
+    <fullyQualifiedTypeName name="uo.mp.checks.ArgumentsCheck"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.dome.model.Borrowable"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.awt.print.Book"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.dome.model.Book"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.dome.model.Cd"/>
+    <fullyQualifiedTypeName name="uo.mp.s4.dome.service.MediaLibrary"/>
+</qualifiedTypeNameHistroy>

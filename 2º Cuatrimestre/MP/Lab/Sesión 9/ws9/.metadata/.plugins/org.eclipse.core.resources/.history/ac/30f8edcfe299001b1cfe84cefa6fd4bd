@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package publicationparser.parse.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * @author blanc
+ *
+ */
+public class ParseTests {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

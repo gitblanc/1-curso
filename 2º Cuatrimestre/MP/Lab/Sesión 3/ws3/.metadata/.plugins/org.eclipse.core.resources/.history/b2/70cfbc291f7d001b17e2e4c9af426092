@@ -1,0 +1,48 @@
+package uo.mp.s4.dome.service.medialibrary;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import uo.mp.s4.dome.model.Cd;
+import uo.mp.s4.dome.service.MediaLibrary;
+
+public class SearchTest {
+
+	/*
+	 * Casos
+	 * 
+	 * 1 No hay ningún item -> devuelve -1
+	 * 2 Existe ese item -> lo devuelve 
+	 * 3 item no válido
+	 * 4 item no es el mismo pero tiene los mismos datos 
+	 */
+
+	/**
+	 * GIVEN:
+	 * WHEN: El propietario tiene 1 item
+	 * THEN: devuelve 1
+	 */
+	Cd cd1 = new Cd("Tornado of Souls","Megadeth", 4, 45, 20.0,false);
+	Cd cd2 = new Cd("Washburn","Pantera", 4, 45, 20.0,false);
+	@Test
+	public void testSearchItem1() {
+		MediaLibrary m = new MediaLibrary();
+		assertEquals(-1, m.search(cd1));
+	}
+	
+	/**
+	 * GIVEN:
+	 * WHEN: El propietario tiene 1 item
+	 * THEN: devuelve 1
+	 */
+	@Test 
+	public void testSearchItem2() {
+		MediaLibrary m = new MediaLibrary();
+		m.add(cd1);
+		m.add(cd2);
+		assertEquals(0, m.search(cd1));
+		assertEquals(1, m.search(cd2));
+	}
+	
+}

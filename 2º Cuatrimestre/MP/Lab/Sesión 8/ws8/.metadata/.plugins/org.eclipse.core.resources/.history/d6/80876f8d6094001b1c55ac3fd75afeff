@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package uo.mp.collections.stack;
+
+import org.junit.Test;
+
+/**
+ * @author blanc
+ *
+ */
+public class PushTests {
+
+	@Test
+	public void testPush() {
+		
+	}
+
+}

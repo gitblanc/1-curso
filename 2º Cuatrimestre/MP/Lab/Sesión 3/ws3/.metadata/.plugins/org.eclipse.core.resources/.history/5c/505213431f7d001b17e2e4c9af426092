@@ -1,0 +1,62 @@
+/**
+ * 
+ */
+package uo.mp.s4.dome.application;
+
+import uo.mp.s4.dome.model.Cd;
+import uo.mp.s4.dome.model.Dvd;
+import uo.mp.s4.dome.model.Platform;
+import uo.mp.s4.dome.model.VideoGame;
+import uo.mp.s4.dome.service.MediaLibrary;
+
+/**
+ * @author blanc
+ *
+ */
+public class MediaPlayer {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		run();
+
+	}
+	
+	public static void run() {
+		MediaLibrary m = new MediaLibrary();
+		Cd c1 = new Cd("Tornado of Souls","Megadeth",12, 45, 20.0,false);
+		Cd c2 = new Cd("Drag the Waters","Megadeth",12, 45, 20.0,false);
+		
+		Dvd dv1 = new Dvd("Tornado of Souls","Megadeth",12, 20.0);
+		Dvd dv2 = new Dvd("Tornado of Souls","Megadeth",12, 20.0);
+		
+		VideoGame v1 = new VideoGame("GTA5","Rockstar",2, Platform.PLAYSTATION, 20.0);
+		VideoGame v2 = new VideoGame("Monkey","J.Cole",4, Platform.PLAYSTATION, 20.0);
+		
+		
+		
+		
+		m.add(c1);
+		m.add(dv1);
+		m.add(v1);
+		m.add(c2);
+		m.add(dv2);
+		m.add(v2);
+		
+		m.setAllOwned();
+		
+		System.out.println(m.numberOfItemsOwned());
+		m.printResponsable(System.out);
+		m.list(System.out);
+		System.out.println("-------Listado de list2--------");
+		System.out.println();
+		m.list2(System.out);
+		System.out.println("---------Código generado por los Items:");
+		System.out.println(m.generateCode());
+		
+		
+		
+	}
+
+}

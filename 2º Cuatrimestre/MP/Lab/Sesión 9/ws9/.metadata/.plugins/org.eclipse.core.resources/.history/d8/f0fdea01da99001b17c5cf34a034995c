@@ -1,0 +1,68 @@
+package uo.mp.newsstand.ui;
+
+import uo.mp.newsstand.domain.Magazine;
+import uo.mp.newsstand.domain.Newspaper;
+import uo.mp.newsstand.domain.Publication;
+import uo.mp.newsstand.ui.console.Console;
+
+/**
+ * Asks the user all the data for a new publication.
+ * 
+ */
+public class PublicationForm {
+
+	public static final int MIN_STOCK = 0;
+	public static final int MAX_STOCK = 100;
+
+	/**
+	 * @return The new Publication object created. It will be be of any of the child
+	 *         types of Publication.
+	 * @throws ApplicationException
+	 */
+	public Publication askForPublication() throws ApplicationException {
+		String type = Console.readString("Type of publication? (n | m)");
+		type = type.toLowerCase();
+		do {
+			type = Console.readString("Type of publication? (n | m)").toLowerCase();
+			if (type == "n") {
+				return askForNewsPaper();
+			} else if (type == "m") {
+				return askForMagazine();
+			} else {
+				throw new ApplicationException("Tipo desconocido");
+			}
+		} while (type != "n" && type != "m");
+
+	}
+
+	private Publication askForMagazine() throws ApplicationException {
+		String name = Console.readString("name?");	//cadena
+		int stock = Console.readInteger("stock?");//stock
+		do {
+			if(correctStock(stock)) {
+				stock = Console.readInteger("stock?");
+			}
+			else {
+				throw new ApplicationException("Stock inválido");
+			}
+		}
+		while(correctStock(stock));
+		int sales = Console.readInteger("sales?");
+		int regularity = Console.readInteger("regularity?");
+
+		return new Magazine(name, stock, sales, regularity);
+	}
+	
+	private boolean correctStock(int stock) {
+		return stock >= MIN_STOCK && stock <= MAX_STOCK;
+	}
+
+	private Publication askForNewsPaper() {
+		String name = Console.readString("name?");
+		int stock = Console.readInteger("stock?");
+		int sales = Console.readInteger("sales?");
+
+		return new Newspaper(name, stock, sales);
+	}
+
+}

@@ -1,0 +1,107 @@
+/**
+ * 
+ */
+package mp.battleship.sprint1.skeleton.board.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import uo.mp.battleship.board.Board;
+import uo.mp.battleship.board.Coordinate;
+
+/**
+ * @author blanc
+ *
+ */
+class IsFleetSunkTest {
+
+	/**
+	 * Casos:
+	 * 
+	 * 1 Cuando hay varios barcos a flote:
+	 * 	1.1 Después de un disparo que falla devuelve false
+	 * 	1.2 Después de un disparo que toca pero no hunde uno de los barcos
+	 * 		devuelve false
+	 * 	1.3 Después de un disparo que hunde uno de los barcos, pero aún quedan
+	 * 		otros a flote devuelve false 
+	 * 2 Cuando solo hay un barco a flote, después de un disparo que lo hunde,
+	 *   devuelve true
+	 */
+	
+	/**
+	 * GIVEN tablero
+	 * WHEN Después de un disparo que falla
+	 * THEN devuelve false
+	 */
+	@Test
+	void testIsFleetSunk1() {
+		Board humanBoard = new Board(10);
+		Coordinate c1 = new Coordinate('C', 2);
+		humanBoard.shootAt(c1);
+		assertEquals(false, humanBoard.isFleetSunk());
+	}
+	
+	/**
+	 * GIVEN tablero
+	 * WHEN Después de un disparo que toca pero no hunde uno de los barcos
+	 * THEN devuelve false
+	 */
+	@Test
+	void testIsFleetSunk2() {
+		Board humanBoard = new Board(10);
+		Coordinate c1 = new Coordinate('C', 1);
+		humanBoard.shootAt(c1);
+		assertEquals(false, humanBoard.isFleetSunk());
+	}
+	
+	/**
+	 * GIVEN tablero
+	 * WHEN Después de un disparo que hunde uno de los barcos, pero aún quedan
+	 * 		otros a flote
+	 * THEN devuelve false
+	 */
+	@Test
+	void testIsFleetSunk3() {
+		Board humanBoard = new Board(10);
+		Coordinate c1 = new Coordinate('A', 5);
+		Coordinate c2 = new Coordinate('B', 5);
+		Coordinate c3 = new Coordinate('C', 5);
+		humanBoard.shootAt(c1);
+		humanBoard.shootAt(c2);
+		humanBoard.shootAt(c3);	
+		assertEquals(false, humanBoard.isFleetSunk());
+	}
+	
+	/**
+	 * GIVEN tablero
+	 * WHEN Cuando solo hay un barco a flote, después de un disparo que lo hunde
+	 * THEN devuelve TRUE	
+	 */
+	@Test
+	void testIsFleetSunk4() {
+		Board humanBoard = new Board(10);
+		Coordinate c1 = new Coordinate('A', 1);
+		Coordinate c2 = new Coordinate('C', 1);
+		Coordinate c3 = new Coordinate('E', 1);
+		Coordinate c4 = new Coordinate('G', 1);
+		
+		Coordinate c5 = new Coordinate('A', 3);
+		Coordinate c6 = new Coordinate('B', 3);
+		Coordinate c7 = new Coordinate('D', 3);
+		Coordinate c8 = new Coordinate('E', 3);
+		Coordinate c9 = new Coordinate('G', 3);
+		Coordinate c10 = new Coordinate('H', 3);
+		
+		Coordinate c11 = new Coordinate('A', 5);
+		Coordinate c12 = new Coordinate('B', 5);
+		Coordinate c13 = new Coordinate('C', 5);
+		Coordinate c14 = new Coordinate('E', 5);
+		Coordinate c15 = new Coordinate('F', 5);
+		Coordinate c16 = new Coordinate('G', 5);
+		humanBoard.shootAt(c1);
+		humanBoard.shootAt(c2);
+		humanBoard.shootAt(c3);	
+		assertEquals(false, humanBoard.isFleetSunk());
+	}
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package numbers;
+
+/**
+ * @author blanc
+ *
+ */
+public class PairAndOdd {
+
+	
+	public static void main(String[] args) {
+		Thread odd = new Thread(new Odd());
+		Thread pair = new Pair();	
+		
+		odd.start();
+		pair.start();
+	}
+}

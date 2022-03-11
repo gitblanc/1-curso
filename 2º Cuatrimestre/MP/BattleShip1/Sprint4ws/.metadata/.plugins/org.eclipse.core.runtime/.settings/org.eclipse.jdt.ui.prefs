@@ -1,0 +1,11 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="uo.mp.battleship.board.Coordinate"><rhs name\="uo.mp.battleship.board.Coordinate"/></lhs><lhs name\="java.lang.Enum"><rhs name\="uo.mp.battleship.session.GameLevel"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="uo.mp.battleship.session.GameLevel"/></lhs><lhs name\="uo.mp.battleship.session.GameLevel"><rhs name\="uo.mp.battleship.session.GameLevel"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Readable"><rhs name\="java.io.InputStreamReader"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.InputStreamReader"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.InputStreamReader"/></lhs><lhs name\="java.io.Reader"><rhs name\="java.io.InputStreamReader"/></lhs><lhs name\="uo.mp.battleship.player.Player"><rhs name\="uo.mp.battleship.player.Player"/></lhs><lhs name\="uo.mp.battleship.ranking.Score"><rhs name\="uo.mp.battleship.ranking.Score"/></lhs><lhs name\="uo.mp.battleship.interaction.GameInteractor"><rhs name\="uo.mp.battleship.interaction.RandomInteractor"/></lhs><lhs name\="uo.mp2021.util.log.SimpleLogger"><rhs name\="uo.mp2021.util.log.ConsoleSimpleLogger"/></lhs></history>
+content_assist_number_of_computers=12
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=20
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

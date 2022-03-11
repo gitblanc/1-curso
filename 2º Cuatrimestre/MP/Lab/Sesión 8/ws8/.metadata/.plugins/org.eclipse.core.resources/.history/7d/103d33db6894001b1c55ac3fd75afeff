@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package uo.mp.collections.stack;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.mp.collections.impl.LinkedList;
+
+/**
+ * @author blanc
+ *
+ */
+public class PeekTests {
+
+	private Object obj;
+	private Object obj1;
+	private Object obj2;
+	
+	/** 
+	 * 1 Test peek sobre una lista vacía (empty list)
+	 * 2 Test el tamaño de la pila después de realizar peek sobre una pila no vacía
+	 * 3 Test empty después de realizar peek sobre una pila no vacía
+	 * 4 Testdel tope de la pila después de realizar una operación peek
+	 * @throws Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		obj = new Object();
+		obj1 = new Object();
+		obj2 = new Object();
+	}
+	@Test
+	public void testPeek1() {
+		LinkedList<T> l1 = new LinkedList<T>();
+	}
+
+}

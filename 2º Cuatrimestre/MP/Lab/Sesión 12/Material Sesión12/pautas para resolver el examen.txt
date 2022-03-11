@@ -1,0 +1,43 @@
+	- Lee atentamente dos veces el enunciado y dibuja una primera versión del UML
+		- Pon las clases principales con sus atributos
+		
+	- Compare el modelo UML creado con el proyecto esqueleto
+		
+	- Pensar/comprender el algoritmo para validar transacciones
+		- Usa polymorfismo
+		- Ver los métodos validate() y hasErrors() en transaction
+
+	- Comienza la codificación, siga este orden recomendado:
+	
+	- Haz que el código compile, usa las soluciones rápidas de Eclipse, haz clic, haz clic ...
+		- Para que compile tienes que crear esqueletos para todas las clases importantes.
+		- Usar las soluciones rápidas ahorra mucho tiempo.
+	
+	- Añade manejo de excepciones 
+		- En Main. 
+			Un manejador para errores System/Programming (cath RuntimeExceptions). 
+			Otro para errores Application/Logic (no hay interacción del usuario en este programa)(catch Exceptions).
+		- Use el logger de tu proyecto de utilidades
+		
+	- Escribe las pruebas para la jerarquía de XxxxTransaction.validate (), sí, ahora
+		- Escríbelas ahora, ganarás tiempo y te obligarás a comprender claramente el núcleo del proyecto.
+		- Piensa en escenarios
+		- Haz que las pruebas pasen, añade código ahora. Deja de codificar cuando pasen estas pruebas..
+		
+	- Escribe las pruebas para la clase TransactionValidator.validate ()
+		- Si, ahora
+		- Haz que las pruebas pasen. Mismo patrón
+			Piensa en escenarios, escriba escenarios, deja de codificar cuando pasen las pruebas..
+
+	- Escribe las pruebas para TransactionLoader(…).load()
+		- Haz que pase, eso te obligará a:
+		- Implementar el 
+		- Usar XxxxFileUtil
+		
+	- Implementa la serialización
+	- Implementa los xTransactionWriters
+	- Implementa la ordenación
+	
+	- Ejecuta main, comprueba todo.
+		
+			

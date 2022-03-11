@@ -1,0 +1,30 @@
+package uo.mp.s4.dome.service.medialibrary;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import uo.mp.s4.dome.model.Cd;
+import uo.mp.s4.dome.service.MediaLibrary;
+
+public class GiveBackTest {
+
+	
+	/*
+	 *Casos
+	 *
+	 * 1 Item es nulo -> salta excepción
+	 * 2 Item no está disponible -> devuelve false
+	 * 3 Item distinto de null y disponible -> devuelve true
+	 */
+	@Test
+	(expected = IllegalArgumentException.class)
+	public void testGiveBack1() {
+		MediaLibrary m = new MediaLibrary();
+		Cd cd1 = new Cd("Patata", "Aceituna", 23, 10, 90);
+		m.add(cd1);
+		cd1 = null;
+		assertNull(m.borrow(cd1));
+	}
+
+}

@@ -1,0 +1,188 @@
+package sintactico;
+import lexico.Yylex;
+import java.io.FileReader;
+
+action code{::}
+
+parser code{:
+    NewHashMap table = new NewHashMap();
+   public static void main(String args[]) throws Exception {
+		      parser p = new parser(new Yylex(new FileReader(args[0])));
+		      Nodo root = (Nodo)p.parse().value;
+		      System.out.println("\n\nAnalisis sintactico: ");
+		      System.out.println("-----------------------------------------");
+		      root.printTree(0, false, "");
+    } // End Main
+                            
+	public parser (java.io.Reader input) { super(new lexico.Yylex(input)); }
+:}
+
+/* Declaracion de variables */
+non terminal Nodo PROGRAMA, BLOQUE, INSTRUCCION, SENTENCIA;
+non terminal Nodo IMPRIMIR, ASIGNACION;
+non terminal Nodo EXPRESION, TERMINO, FACTOR, BOOLEANO	;
+
+/* Declaracion de terminales */
+terminal inicio, fin;
+terminal imprime, asigna, fin_sent, masigual;
+terminal mas, menos, por, entre, abrepar, cierrapar, mayor, menor, igual, mayoroigual, menoroigual, masmas;
+terminal String variable;
+terminal Double real, entero;
+terminal String cadena;
+
+start with PROGRAMA; // start with sirve para indicarle al parser con que produccion empezar
+
+/* PROGRAMA -> BLOQUE */
+PROGRAMA::=	inicio BLOQUE:izda fin		{: RESULT = new Nodo("programa", izda); :}
+			;
+
+/* BLOQUE -> BLOQUE INSTRUCCION | INSTRUCCION */
+BLOQUE ::=	BLOQUE:izda INSTRUCCION:dcha	{: RESULT = new Nodo("bloque", izda, dcha); :}
+			| INSTRUCCION:izda				{: RESULT = new Nodo("bloque", izda); :}
+			;
+
+/* INSTRUCCION -> IMPRIMIR fin_sent */
+INSTRUCCION ::= SENTENCIA:izda fin_sent	{: RESULT = new Nodo("instruccion", izda); :}
+			;
+SENTENCIA ::= IMPRIMIR:izda	{: RESULT = new Nodo("sentencia", izda); :}
+			| ASIGNACION:izda {: RESULT = new Nodo("sentencia", izda); :}
+			;
+				
+ASIGNACION ::= variable:izda asigna EXPRESION:dcha {: 
+				table.put(izda, dcha.getValor());
+				RESULT = new Nodo("Asignacion", new Nodo("Variable " + izda, dcha));
+			:}
+			| variable:izda masigual EXPRESION:dcha {: 
+				table.put(izda, dcha.getValor());
+				RESULT = new Nodo("Adicion", new Nodo("Variable " + izda, dcha));
+			:}
+			;
+			
+/* IMPRIMIR -> imprime EXPRESION */
+IMPRIMIR ::= imprime EXPRESION:izda	{: RESULT = new Nodo("Imprimir " + izda.getValor(), izda); :}
+				|imprime cadena:c {: 
+				RESULT = new Nodo("Imprimir " + c);
+				:}
+				| imprime BOOLEANO:izda	{: 
+				if(izda.getValor().equals(0.0)){
+                	RESULT = new Nodo("Imprimir " + "True", izda);
+                }else{
+                	RESULT = new Nodo("Imprimir " + "False", izda);
+                }
+				:}
+				;
+				
+BOOLEANO ::= EXPRESION:izda mayor EXPRESION:dcha {:
+								boolean cond = izda.getValor() > dcha.getValor();
+								if(cond){
+									Double num = 0.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Mayor que ", izda, dcha) );
+                                }else{
+                                	Double num = 1.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Mayor que ", izda, dcha) );
+                                }
+				
+				:}
+				| EXPRESION:izda mayoroigual EXPRESION:dcha {:
+								boolean cond = izda.getValor() >= dcha.getValor();
+								if(cond){
+									Double num = 0.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Mayor o igual ", izda, dcha) );
+                                }else{
+                                	Double num = 1.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Mayor o igual ", izda, dcha) );
+                                }
+                                
+                                
+                :}
+                | EXPRESION:izda menor EXPRESION:dcha {:
+								boolean cond = izda.getValor() < dcha.getValor();
+								if(cond){
+									Double num = 0.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Menor que ", izda, dcha) );
+                                }else{
+                                	Double num = 1.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Menor que ", izda, dcha) );
+                                }
+                                
+                :}
+                | EXPRESION:izda menoroigual EXPRESION:dcha {:
+								boolean cond = izda.getValor() <= dcha.getValor();
+								if(cond){
+									Double num = 0.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Menor o igual ", izda, dcha) );
+                                }else{
+                                	Double num = 1.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Menor o igual ", izda, dcha) );
+                                }
+                                
+                :}
+                 | EXPRESION:izda igual EXPRESION:dcha {:
+								boolean cond = izda.getValor().equals(dcha.getValor());
+								if(cond){
+									Double num = 0.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Igual que ", izda, dcha) );
+                                }else{
+                                	Double num = 1.0;
+                                	RESULT = new Nodo("Booleano " + num, num , new Nodo("Igual que ", izda, dcha) );
+                                }
+                :}
+				;				
+
+
+/* EXPRESION -> EXPRESION mas VALOR | EXPRESION menos VALOR | VALOR */
+EXPRESION ::=	EXPRESION:izda mas TERMINO:dcha	{:
+								Double suma = izda.getValor() + dcha.getValor();
+								RESULT = new Nodo("Expresion " + suma, suma , new Nodo("Mas ", izda, dcha) ); 
+								
+				:}
+				| EXPRESION:izda menos TERMINO:dcha	{:
+								Double resta = izda.getValor() - dcha.getValor();
+                                RESULT = new Nodo("Expresion " + resta, resta , new Nodo("Menos ", izda, dcha) );
+				
+				:}
+				| TERMINO:izda	{: RESULT = izda; :}
+				;
+				
+
+TERMINO ::= TERMINO:izda por FACTOR:dcha {:
+								Double mult = izda.getValor() * dcha.getValor();
+								RESULT = new Nodo("Expresion " + mult, mult , new Nodo("Por ", izda, dcha) );
+				:}
+				| TERMINO:izda entre FACTOR:dcha {:
+								Double division = izda.getValor() / dcha.getValor();
+								RESULT = new Nodo("Expresion " + division, division , new Nodo("Entre ", izda, dcha) );
+								
+				:}
+				| FACTOR:izda	{: RESULT = izda; :}
+				;
+	
+			
+/* FACTOR -> entero */ 
+FACTOR ::= variable:v masmas {: RESULT = new Nodo("Variable " + v, table.get(v) + 1);
+			
+			:}
+			|entero:e {: RESULT = new Nodo("Entero " + e, e); 
+
+			:} 
+			| real:r {: RESULT = new Nodo("Real " + r, r); 
+			
+			:} 
+			| abrepar EXPRESION:izda cierrapar {: RESULT = new Nodo("Parentesis ", (izda.getValor()), izda);
+			
+			:} 
+			| variable:v {: RESULT = new Nodo("Variable " + v, table.get(v));
+			
+			:}
+			| menos FACTOR:izda {: 
+						Double negativo = 0 - izda.getValor();
+						RESULT = new Nodo("Signo menos " + negativo, negativo, izda);
+			
+			:}
+			| mas FACTOR:izda {:
+						Double positivo = izda.getValor();
+						RESULT = new Nodo("Signo mas " + positivo, positivo, izda);
+			
+			:}
+			
+			;

@@ -1,0 +1,64 @@
+/**
+ * 
+ */
+package uo.mp.battleship.ranking;
+
+import java.util.Date;
+
+import uo.mp.battleship.session.GameLevel;
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+
+public class Score {
+	private String userName;
+	private GameLevel level;
+	private long time;
+	private Date date;
+
+	public Score(String userName, GameLevel level, long time) {
+		setUserName(userName);
+		this.level = level;
+		this.time = time;
+		date = new Date();
+	}
+
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
+
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		ArgumentChecks.isTrue(userName != null);
+		ArgumentChecks.isTrue(!userName.isBlank());
+	}
+
+	/**
+	 * @return the level
+	 */
+	public GameLevel getLevel() {
+		return level;
+	}
+
+	/**
+	 * @return the time
+	 */
+	public long getTime() {
+		return time;
+	}
+
+	/**
+	 * @return the date
+	 */
+	public Date getDate() {
+		return date;
+	}
+}

@@ -1,0 +1,44 @@
+package uo.mp.util.file;
+
+
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+import java.util.zip.GZIPInputStream;
+
+import jdk.internal.org.jline.utils.InputStreamReader;
+import uo.mp.newsstand.service.exception.NotYetImplementedException;
+
+/**
+ * A utility class to read/write text lines 
+ * from/to a compressed text file (.txt.gz) 
+ */
+public class ZipFileUtil {
+
+	public List<String> readLines(String inFileName) {
+		BufferedReader res = new BufferedReader(new InputStreamReader
+				(new GZIPInputStream(new FileInputStream(inFileName))));
+		try {
+			try {
+				while (in.ready()) {// mientras haya líneas
+					String line = in.readLine();
+					res.add(line);
+				}
+
+			} finally {
+				in.close();
+			}
+		} catch (IOException e) {
+			throw new RuntimeException("Error en lectura de datos");
+		}
+		return res;
+	}
+
+	public void writeLines(String outZippedFileName, List<String> lines) {
+		throw new NotYetImplementedException();
+	}
+
+}

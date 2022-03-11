@@ -1,0 +1,82 @@
+/**
+ * 
+ */
+package uo.mp.collections.stack;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.mp.collections.impl.LinkedList;
+
+/**
+ * @author blanc
+ *
+ */
+public class PopTests {
+
+	private Object obj;
+	private Object obj1;
+	private Object obj2;
+	
+	/**
+	 * 1 Test pop sobre una lista vacía
+	 * 2 Test el tamaño de la pila después de realizar pop sobre una pila no vacía
+	 * 3 Test empty depués de realizar pop sobre una pila no vacía
+	 * 4 Test del tope de la pila después de realizar una operación pop
+	 * @throws Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		obj = new Object();
+		obj1 = new Object();
+		obj2 = new Object();
+	}
+	@Test
+	public <T> void testPop1() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		assertNull(l1.pop());
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testPop2() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.push((T) obj);
+		l1.push((T) obj1);
+		l1.push((T) obj2);
+		l1.pop();
+		assertEquals(2, l1.size());
+	}
+
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testPop3() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.push((T) obj);
+		l1.push((T) obj1);
+		l1.push((T) obj2);
+		l1.pop();
+		assertFalse(l1.isEmpty());
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Test
+	public <T> void testPop4() {
+		LinkedList<T> l1 = new LinkedList<T>();
+		l1.push((T) obj);
+		l1.push((T) obj1);
+		l1.push((T) obj2);
+		l1.push((T) obj);
+		l1.push((T) obj1);
+		l1.push((T) obj2);
+		l1.push((T) obj);
+		l1.push((T) obj1);
+		l1.push((T) obj2);
+		l1.push((T) obj2);
+		l1.pop();
+		assertFalse(l1.isEmpty());
+		assertEquals(LinkedList.MAX_NUMBER_OF_ELEMENTS-1, l1.size());
+	}
+}

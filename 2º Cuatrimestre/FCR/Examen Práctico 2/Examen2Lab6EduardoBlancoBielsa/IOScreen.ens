@@ -1,0 +1,19 @@
+ORIGEN 8500h
+
+.CODIGO
+
+movl r0, 61
+movh r0, 0
+movl r5, 39
+movh r5, 0
+movl r2, 36
+movh r2, 0
+next:
+sub r3, r2, r0
+brnc next
+mov r3, [r4]
+dec r5
+sub r1, r5, r2
+brnz next
+
+FIN

@@ -1,0 +1,10 @@
+newspaper	La Nueva España	14	30
+
+
+newspaper	El Mundo	4	10
+magazine	Hola	14	30	7
+magazine	PCWord	14	30	30
+magazine	Diez Minutos	4	10	7
+magazine	El Mueble	4	10	30	
+magazine	Muy Interesante	8	20	7
+magazine	Quo	8	10	30

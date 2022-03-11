@@ -1,0 +1,78 @@
+package uo.mp2021.util.collections.testcases;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.mp2021.util.collections.List;
+import uo.mp2021.util.collections.setting.Settings;
+
+public class IsEmptyTests {
+	
+	private List list;
+
+	/**
+	 * Casos:
+	 * 1 Una lista recien creada esta vacía
+	 * 2 Una lista queda vacía después de la operación clear
+	 * 3 Una lista con un elemento no está vacía
+	 * 4 Una lista con más de un elemento no esta vacía
+	 */
+	
+	@Before
+	public void setUp() throws Exception {
+		list = Settings.factory.newList();
+	}
+
+	/**
+	 * GIVEN una lista
+	 * WHEN Una lista recien creada esta vacía
+	 * THEN devuelve true
+	 */
+	@Test
+	public void test1() {
+		assertTrue(list.isEmpty());
+	}
+	
+	/**
+	 * GIVEN una lista
+	 * WHEN Una lista queda vacía después de la operación clear
+	 * THEN devuelve true
+	 */
+	@Test
+	public void test2() {
+		list.clear();
+		assertTrue(list.isEmpty());
+	}
+	
+	/**
+	 * GIVEN una lista
+	 * WHEN Una lista con un elemento no está vacía
+	 * THEN devuelve false
+	 */
+	@Test
+	public void test3() {
+		String x1 = new String("Patata");
+		list.add(x1);
+		assertFalse(list.isEmpty());
+	}
+	
+	/**
+	 * GIVEN una lista
+	 * WHEN Una lista con más de un elemento no esta vacía
+	 * THEN devuelve false
+	 */
+	@Test
+	public void test4() {
+		String x1 = new String("Patata");
+		String x2 = new String("Aceituna");
+		list.add(x1);
+		list.add(x2);
+		assertFalse(list.isEmpty());
+	}
+	
+	
+
+}

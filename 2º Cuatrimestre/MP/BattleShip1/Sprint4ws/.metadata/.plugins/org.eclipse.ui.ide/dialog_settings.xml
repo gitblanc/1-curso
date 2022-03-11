@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="org.eclipse.draw2d.sdk:3.10.100.201606061308"/>
+		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
+		<item value="org.eclipse.egit:5.10.0.202012080955-r"/>
+		<item value="org.eclipse.emf.cdo.compare:4.6.0.v20201104-1312"/>
+		<item value="org.eclipse.emf.cdo.doc:4.3.2.v20201008-0738"/>
+		<item value="org.eclipse.emf.cdo.examples.installer:4.3.3.v20201104-0919"/>
+		<item value="org.eclipse.emf.cdo.server.db:4.10.0.v20201209-0820"/>
+		<item value="org.eclipse.emf.cdo.server:4.12.0.v20201209-0738"/>
+		<item value="org.eclipse.emf.cdo:4.12.0.v20201209-0738"/>
+		<item value="org.eclipse.emf.codegen.ecore.ui:2.24.0.v20200917-1423"/>
+		<item value="org.eclipse.emf.codegen.ecore:2.24.0.v20200917-1423"/>
+		<item value="org.eclipse.emf.codegen.ui:2.22.0.v20200424-0451"/>
+		<item value="org.eclipse.emf.codegen:2.21.0.v20200708-0547"/>
+		<item value="org.eclipse.emf.common.ui:2.17.0.v20190507-0402"/>
+		<item value="org.eclipse.emf.common:2.21.0.v20200917-1439"/>
+		<item value="org.eclipse.emf.compare.ide.ui.source:3.3.13.202011201248"/>
+		<item value="org.eclipse.emf.compare.ide.ui:3.3.13.202011201248"/>
+		<item value="org.eclipse.emf.compare.source:3.3.13.202011201248"/>
+		<item value="org.eclipse.emf.compare:3.3.13.202011201248"/>
+		<item value="org.eclipse.emf.converter:2.15.0.v20200324-0723"/>
+		<item value="org.eclipse.emf.databinding.edit:1.7.0.v20190323-1059"/>
+		<item value="org.eclipse.emf.databinding:1.7.0.v20190323-1059"/>
+		<item value="org.eclipse.emf.doc:2.23.0.v20200917-1343"/>
+		<item value="org.eclipse.emf.ecore.edit:2.14.0.v20190822-1451"/>
+		<item value="org.eclipse.emf.ecore.editor:2.17.0.v20190528-0725"/>
+		<item value="org.eclipse.emf.ecore:2.23.0.v20200630-0516"/>
+		<item value="org.eclipse.emf.edit.ui:2.20.0.v20200917-1406"/>
+		<item value="org.eclipse.emf.edit:2.16.0.v20190920-0401"/>
+		<item value="org.eclipse.emf.mapping.ecore.editor:2.14.0.v20190528-0725"/>
+		<item value="org.eclipse.emf.mapping.ecore:2.12.0.v20190323-1059"/>
+		<item value="org.eclipse.emf.mapping.ui:2.13.0.v20190323-1059"/>
+		<item value="org.eclipse.emf.mapping:2.13.0.v20190323-1059"/>
+		<item value="org.eclipse.emf.query.doc:1.12.0.201805030653"/>
+		<item value="org.eclipse.emf.query.ocl:1.12.0.201805030653"/>
+		<item value="org.eclipse.emf.query:1.12.0.201805030653"/>
+		<item value="org.eclipse.emf.transaction.doc:1.12.0.201805140824"/>
+		<item value="org.eclipse.emf.transaction:1.12.0.201805140824"/>
+		<item value="org.eclipse.emf.validation.doc:1.12.2.202008210805"/>
+		<item value="org.eclipse.emf.validation.ocl:1.12.2.202008210805"/>
+		<item value="org.eclipse.emf.validation:1.12.2.202008210805"/>
+		<item value="org.eclipse.emf.workspace.doc:1.12.0.201805140824"/>
+		<item value="org.eclipse.emf.workspace:1.12.0.201805140824"/>
+		<item value="org.eclipse.emf:2.24.0.v20200917-1439"/>
+		<item value="org.eclipse.gef.sdk:3.11.0.201606061308"/>
+		<item value="org.eclipse.gef:3.11.0.201606061308"/>
+		<item value="org.eclipse.gmf.examples.runtime.ui.pde:1.13.0.202004160913"/>
+		<item value="org.eclipse.gmf.examples.runtime:1.13.0.202004160913"/>
+		<item value="org.eclipse.gmf.runtime.notation.sdk:1.13.0.202004160913"/>
+		<item value="org.eclipse.gmf.runtime.notation:1.13.0.202004160913"/>
+		<item value="org.eclipse.gmf.runtime.sdk:1.13.0.202004160913"/>
+		<item value="org.eclipse.gmf:1.13.0.202004160913"/>
+		<item value="org.eclipse.help:2.3.400.v20201202-1800"/>
+		<item value="org.eclipse.jdt:3.18.600.v20201202-1800"/>
+		<item value="org.eclipse.jgit.gpg.bc:5.10.0.202012080955-r"/>
+		<item value="org.eclipse.jgit.http.apache:5.10.0.202012080955-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:5.10.0.202012080955-r"/>
+		<item value="org.eclipse.jgit.ssh.jsch:5.10.0.202012080955-r"/>
+		<item value="org.eclipse.jgit:5.10.0.202012080955-r"/>
+		<item value="org.eclipse.mylyn.bugzilla_feature:3.25.2.v20200814-0512"/>
+		<item value="org.eclipse.mylyn.commons.identity:1.17.2.v20200813-0821"/>
+		<item value="org.eclipse.mylyn.commons.notifications:1.17.2.v20200813-0821"/>
+		<item value="org.eclipse.mylyn.commons.repositories:1.17.2.v20200813-0821"/>
+		<item value="org.eclipse.mylyn.commons:3.25.2.v20200813-0821"/>
+		<item value="org.eclipse.mylyn.context_feature:3.25.2.v20200828-1617"/>
+		<item value="org.eclipse.mylyn.discovery:3.25.2.v20200813-0821"/>
+		<item value="org.eclipse.mylyn.ide_feature:3.25.2.v20200828-1617"/>
+		<item value="org.eclipse.mylyn.java_feature:3.25.2.v20200828-1617"/>
+		<item value="org.eclipse.mylyn.monitor:3.25.2.v20200813-0821"/>
+		<item value="org.eclipse.mylyn.pde_feature:3.25.2.v20200828-1617"/>
+		<item value="org.eclipse.mylyn.tasks.ide:3.25.2.v20200814-0512"/>
+		<item value="org.eclipse.mylyn.team_feature:3.25.2.v20200828-1617"/>
+		<item value="org.eclipse.mylyn_feature:3.25.2.v20200814-0512"/>
+		<item value="org.eclipse.net4j.db.h2:4.4.0.v20200412-0425"/>
+		<item value="org.eclipse.net4j.db:4.12.0.v20201209-0820"/>
+		<item value="org.eclipse.net4j.examples.installer:4.3.2.v20201104-0919"/>
+		<item value="org.eclipse.net4j.util.ui:4.12.0.v20201209-0820"/>
+		<item value="org.eclipse.net4j.util:4.12.0.v20201209-0820"/>
+		<item value="org.eclipse.net4j:4.12.0.v20201209-0820"/>
+		<item value="org.eclipse.ocl.all:5.13.0.v20201208-2229"/>
+		<item value="org.eclipse.ocl.doc:3.14.400.v20201208-2229"/>
+		<item value="org.eclipse.ocl.edit:5.13.0.v20201208-2229"/>
+		<item value="org.eclipse.ocl.ui:2.13.0.v20201208-2229"/>
+		<item value="org.eclipse.ocl.uml:5.13.0.v20201208-2229"/>
+		<item value="org.eclipse.ocl:3.14.400.v20201208-2229"/>
+		<item value="org.eclipse.papyrus.sdk.feature.source:5.0.0.202012091059"/>
+		<item value="org.eclipse.papyrus.sdk.feature:5.0.0.202012091059"/>
+		<item value="org.eclipse.pde:3.14.600.v20201202-1800"/>
+		<item value="org.eclipse.platform:4.18.0.v20201202-1800"/>
+		<item value="org.eclipse.rcp:4.18.0.v20201202-1800"/>
+		<item value="org.eclipse.sdk:4.18.0.v20201202-1800"/>
+		<item value="org.eclipse.uml2.codegen.ecore.ui:2.5.0.v20200302-1312"/>
+		<item value="org.eclipse.uml2.common.edit:2.5.0.v20200302-1312"/>
+		<item value="org.eclipse.uml2.common:2.5.0.v20200302-1312"/>
+		<item value="org.eclipse.uml2.doc:5.5.0.v20200302-1312"/>
+		<item value="org.eclipse.uml2.examples:5.5.0.v20200302-1312"/>
+		<item value="org.eclipse.uml2.sdk:5.5.1.v20200302-1312"/>
+		<item value="org.eclipse.uml2.uml.edit:5.5.0.v20200302-1312"/>
+		<item value="org.eclipse.uml2.uml:5.5.0.v20200302-1312"/>
+		<item value="org.eclipse.uml2:5.5.1.v20200302-1312"/>
+		<item value="org.eclipse.xsd.doc:2.20.0.v20200917-1343"/>
+		<item value="org.eclipse.xsd.ecore.converter:2.12.0.v20200324-0723"/>
+		<item value="org.eclipse.xsd.edit:2.13.0.v20200723-0820"/>
+		<item value="org.eclipse.xsd.editor:2.13.0.v20190323-1100"/>
+		<item value="org.eclipse.xsd.mapping.editor:2.13.0.v20190323-1100"/>
+		<item value="org.eclipse.xsd.mapping:2.13.0.v20200723-0820"/>
+		<item value="org.eclipse.xsd:2.19.0.v20200917-0747"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\eduardo_blanco_bielsa_battleship_sprint2y1\eduardo_blanco_bielsa_sprint2.zip"/>
+			<item value="C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\BattleShip1\mp.battleship.sprint2.eduardo_blanco_bielsa.zip"/>
+			<item value="C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\BattleShip1\mp.battleship.sprint3.console.skeleton.zip"/>
+			<item value="C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\BattleShip1\mp.battleship.util.zip"/>
+			<item value="C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\BattleShip1\mp.battleship.sprint3.gui.zip"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="652"/>
+		<item key="DIALOG_Y_ORIGIN" value="341"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

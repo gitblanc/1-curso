@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package uo.mp.battleship.ranking;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author blanc
+ *
+ */
+public class GameRanking {
+
+	private List<Score> scores = new ArrayList<>();
+}

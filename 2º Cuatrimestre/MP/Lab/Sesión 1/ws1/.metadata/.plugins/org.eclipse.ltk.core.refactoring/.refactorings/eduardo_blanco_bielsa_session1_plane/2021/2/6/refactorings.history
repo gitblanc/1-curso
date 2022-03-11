@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Person.java&apos; to &apos;eduardo_blanco_bielsa_session02_task_seatmanager/src/eduardo_blanco_bielsa_session02_task_seatmanager&apos;&#x0D;&#x0A;- Original project: &apos;eduardo_blanco_bielsa_session1_plane&apos;&#x0D;&#x0A;- Destination element: &apos;eduardo_blanco_bielsa_session02_task_seatmanager/src/eduardo_blanco_bielsa_session02_task_seatmanager&apos;&#x0D;&#x0A;- Original element: &apos;uo.mp.s1.plane.model.Person.java&apos;" description="Copy compilation unit" destination="=eduardo_blanco_bielsa_session02_task_seatmanager/src&lt;eduardo_blanco_bielsa_session02_task_seatmanager" element1="/src&lt;uo.mp.s1.plane.model{Person.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1613147744958" units="1" version="1.0"/>
+</session>

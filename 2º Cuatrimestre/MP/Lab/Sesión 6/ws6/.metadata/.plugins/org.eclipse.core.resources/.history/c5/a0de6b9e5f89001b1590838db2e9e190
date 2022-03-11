@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package uo.mp.s6.greenhouse.scanner;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author blanc
+ *
+ */
+public class DeviceScanner implements Checkable {
+
+	List<Checkable> checkables = new ArrayList<Checkable>();
+
+	public void add(Checkable sensor) {
+		if (sensor != null) {
+			this.checkables.add(sensor);
+
+		}
+	}
+
+	@Override
+	public boolean check() {
+		return false;
+	}
+
+	@Override
+	public int getId() {
+		return 0;
+	}
+	
+	
+}

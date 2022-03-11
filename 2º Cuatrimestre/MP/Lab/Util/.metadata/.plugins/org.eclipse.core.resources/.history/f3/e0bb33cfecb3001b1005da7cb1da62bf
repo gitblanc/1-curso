@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package uo.mp2021.util.file;
+
+/**
+ * @author blanc
+ *
+ */
+public class BaseFileUtil {
+
+}

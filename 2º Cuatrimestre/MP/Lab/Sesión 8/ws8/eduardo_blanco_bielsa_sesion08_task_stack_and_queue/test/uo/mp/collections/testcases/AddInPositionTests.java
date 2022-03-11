@@ -1,0 +1,161 @@
+package uo.mp.collections.testcases;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.mp.collections.List;
+import uo.mp.collections.setting.Settings;
+
+public class AddInPositionTests<T> {
+	
+	private List<T> list;
+	private Object obj;
+	private Object obj1;
+	private Object obj2;
+
+	/**
+     * 1- Add en la posición 0 de una lista vacía añade el elemento
+     * 2- Add en la posición 0 de una lista con varios elementos añade el elemento y mueve el resto una posición a la derecha
+     * 3- Add en una posición intermedia de una lista añade el elemento y mueve el resto una posición a la derecha
+     * 4- Add en la última posición de una lista con elementos añade el elemento
+     * 5- Add en la posición después del último de una lista con elementos añade el elemento
+     * 6- Intentar añadir  en una posición negativa, se lanza IndexOutOfBoundsException
+     * 7- Intentar añadir en una posicón > size(), se lanza IndexOutOfBoundsException
+     * 8- Intentar añadir un null, se lanza IllegalArgumentException
+     */
+
+	@Before
+	public void setUp() throws Exception {
+		list = Settings.factory.newList();
+		obj = new Object();
+		obj1 = new Object();
+		obj2 = new Object();
+	}
+
+	/**
+	 * GIVEN Una lista vacía
+	 * WHEN Se añade un elemento en la posición 0
+	 * THEN Se añade el elemento
+	 */
+	@SuppressWarnings("unchecked")
+	@Test
+	public void emptyFirst() {
+		
+		list.add(0, (T) obj);
+		
+		assertTrue(list.size() == 1);
+		assertTrue(list.contains((T) obj));
+	}
+	
+	/**
+	 * GIVEN Una lista con varios elementos
+	 * WHEN Se añade un elemento en la posición 0
+	 * THEN Se añade el elemento y se mueve el resto
+	 */
+	@SuppressWarnings("unchecked")
+	@Test
+	public void notEmptyFirst() {
+		list.add((T) obj1);
+		list.add((T) obj2);
+		
+		list.add(0, (T) obj);
+		
+		assertTrue(list.size() == 3);
+		assertTrue(list.get(1).equals(obj1));
+	}
+	
+	
+	/**
+	 * GIVEN Una lista con varios elementos
+	 * WHEN Se añade un elemento en una posición intermedia
+	 * THEN Se añade el elemento y se desplaza el resto
+	 */
+	@SuppressWarnings("unchecked")
+	@Test
+	public void intermediate() {
+		list.add((T) obj1);
+		list.add((T) obj2);
+		
+		list.add(1, (T) obj);
+		
+		assertTrue(list.size() == 3);
+		assertTrue(list.get(1).equals(obj));
+	}
+	
+	
+	/**
+	 * GIVEN Una lista con varios elementos
+	 * WHEN Se añade un elemento en la última posición actual 
+	 * THEN Se añade el elemento y se desplaza un objeto
+	 */
+	@SuppressWarnings("unchecked")
+	@Test
+	public void actualLast() {
+		list.add((T) obj1);
+		list.add((T) obj2);
+		
+		list.add(list.size() - 1, (T) obj);
+		
+		assertTrue(list.size() == 3);
+		assertTrue(list.get(2).equals(obj2));
+	}
+	
+	
+	/**
+	 * GIVEN Una lista 
+	 * WHEN Se añade un elemento en la posición última posición
+	 * THEN Se añade el elemento al final
+	 */
+	@SuppressWarnings("unchecked")
+	@Test
+	public void last() {
+		list.add((T) obj1);
+		list.add((T) obj2);
+		
+		list.add(list.size(), (T) obj);
+		
+		assertTrue(list.size() == 3);
+		assertTrue(list.get(2).equals(obj));
+	}
+	
+	
+	/**
+	 * GIVEN Una lista 
+	 * WHEN Se intenta añadir un elemento a una posición negativa
+	 * THEN Se lanza una excepción
+	 */
+	@SuppressWarnings("unchecked")
+	@Test
+	(expected = IndexOutOfBoundsException.class)
+	public void test5() {
+		list.add(-1, (T) obj);
+	}
+	
+	
+	/**
+	 * GIVEN Una lista 
+	 * WHEN Se intenta añadir un elemento a una posición superior al tamaño
+	 * THEN Se lanza una excepción
+	 */
+	@SuppressWarnings("unchecked")
+	@Test
+	(expected = IndexOutOfBoundsException.class)
+	public void test6() {
+		list.add(list.size() + 1, (T) obj);
+	}
+	
+	/**
+	 * GIVEN Una lista 
+	 * WHEN Se intenta añadir un elemento null
+	 * THEN Se lanza una excepción
+	 */
+	@Test
+	(expected = IllegalArgumentException.class)
+	public void test7() {
+		list.add(0, null);
+	}
+
+	
+}

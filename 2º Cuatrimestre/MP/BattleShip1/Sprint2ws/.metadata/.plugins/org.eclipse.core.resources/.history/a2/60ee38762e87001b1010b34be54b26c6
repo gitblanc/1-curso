@@ -1,0 +1,18 @@
+package turnselector.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * @author blanc
+ *
+ */
+public class NextTest {
+
+	@Test
+	public void testNext1() {
+		
+	}
+
+}

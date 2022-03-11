@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package publicationparser.parse.tests;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+import uo.mp.newsstand.domain.Publication;
+
+/**
+ * @author blanc
+ *
+ */
+public class ParseTests {
+
+	/**
+	 * Casos:
+	 * 
+	 * 1 Recibe lista vacía
+	 * 2 Recibe cadena para magazine correcta
+	 * 3 Recibe cadena para newspaper correcta
+	 * 4 Ambas cadenas correctas
+	 * 5 Línea correcta
+	 * 6 Línea incorrecta
+	 */
+	@Test
+	public void testParse1() {
+		List<Publication> publicationList = new ArrayList<>();
+	}
+
+}

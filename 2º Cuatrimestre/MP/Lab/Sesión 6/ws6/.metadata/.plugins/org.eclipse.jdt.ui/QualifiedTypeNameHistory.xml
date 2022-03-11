@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="uo.mp.s6.greenhouse.temperature.AutomaticDoor"/>
+    <fullyQualifiedTypeName name="uo.mp.s6.greenhouse.temperature.VentilationDevice"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="uo.mp.s6.greenhouse.scanner.DeviceScanner"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="uo.mp.s6.greenhouse.humidity.HumidityController"/>
+    <fullyQualifiedTypeName name="uo.mp.s6.greenhouse.humidity.HumiditySensor"/>
+    <fullyQualifiedTypeName name="uo.mp.s6.greenhouse.humidity.WaterSystem"/>
+    <fullyQualifiedTypeName name="uo.mp.s6.greenhouse.scanner.Checkable"/>
+</qualifiedTypeNameHistroy>

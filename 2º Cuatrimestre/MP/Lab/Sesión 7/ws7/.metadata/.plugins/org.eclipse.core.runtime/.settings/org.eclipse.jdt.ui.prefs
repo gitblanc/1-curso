@@ -1,0 +1,9 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="uo.mp2021.util.collections.Collection"><rhs name\="uo.mp2021.util.collections.impl.LinkedList"/><rhs name\="uo.mp2021.util.collections.impl.ArrayList"/></lhs><lhs name\="uo.mp2021.util.collections.List"><rhs name\="uo.mp2021.util.collections.impl.LinkedList"/><rhs name\="uo.mp2021.util.collections.impl.ArrayList"/></lhs><lhs name\="uo.mp2021.util.collections.impl.Node"><rhs name\="uo.mp2021.util.collections.impl.Node"/></lhs></history>
+content_assist_number_of_computers=13
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=20
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

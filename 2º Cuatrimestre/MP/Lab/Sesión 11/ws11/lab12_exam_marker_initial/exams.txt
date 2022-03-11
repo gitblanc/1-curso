@@ -1,0 +1,8 @@
+20209	c	b	cosa	computer	10.5	100	inheritance	256.0	a	abstract
+20210	a	b	stuff	processor	11.5	120	inheritance	128.0	a	abstract
+20211	b	a	other	process	12.5	110	inheritance	256.0	a	blank
+20215	a	b	stuff	thread	13.5	80	inheritance	0.0	a	n/a
+20214	b	c	thing	computer	14.5	0	inheritance	512.0	a	abstract
+20213	c	d	cosa	computer	12.5	10	inheritance	1021.0	a	abstract
+test0	c	a	cosa	ordenateur	10.5	0.0	inheritance	128.0	a	fuzzy
+test10	a	b	stuff	computer	12.5	100.0	polymorphism	256.0	c	abstract

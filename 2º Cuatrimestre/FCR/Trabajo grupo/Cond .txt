@@ -1,0 +1,13 @@
+int num2_bit = (num2 & 0x00000001);
+    int num3_bit = (num3 & 0x00400000) >> 22;
+
+    int valor = 52;
+    int num1_8bits = (num1 & 0x000000ff);
+
+
+    if ((num2_bit == num3_bit) && (num1_8bits > valor)) {
+        return 1;
+    }
+    else {
+        return 0;
+    }

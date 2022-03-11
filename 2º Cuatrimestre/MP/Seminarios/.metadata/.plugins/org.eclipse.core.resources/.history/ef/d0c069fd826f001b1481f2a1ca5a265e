@@ -1,0 +1,82 @@
+package dome.entities;
+
+
+
+import java.io.PrintStream;
+
+public class Dvd {
+	private String title;
+	private String director;
+	private int playingTime;
+	private boolean gotIt;
+	private String comment;
+
+	public Dvd(String theTitle, String theDirector, int time) {
+		setTitle(theTitle);
+		setDirector(theDirector);
+		setPlayingTime(time);
+		setOwn(false);
+		setComment("No comment");
+	}
+
+	public void setTitle(String title) {
+		if (title != null) {
+			this.title = title;
+		}
+	}
+	
+
+	public void setDirector(String director) {
+		if (director != null) {
+			this.director = director;
+		}
+	}
+
+	public void setPlayingTime(int playingTime) {
+		if (playingTime > 0) {
+			this.playingTime = playingTime;
+		}
+	}
+	
+	public void setComment(String comment) {
+		if (comment != null) {
+			this.comment = comment;
+		}
+	}
+
+	public void setOwn(boolean ownIt) {
+		gotIt = ownIt;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+	
+	public boolean getOwn() {
+		return gotIt;
+	}
+
+	public String getDirector() {
+		return this.director;
+	}
+	
+	public String getTitle() {
+		return this.title;
+	}
+	
+	public int getPlayingTime() {
+		return this.playingTime;
+	}
+	
+	public void print(PrintStream out) {
+		out.println("DVD: " + getTitle() + " (" + getPlayingTime() + " mins)");
+		out.println("Director: " + getDirector());
+		if (getOwn()) {
+			out.println("You own it");
+		} else {
+			out.println("You do not own it");
+		}
+		out.println("Comment: " + getComment());
+	}
+
+}

@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package uo.mp.transaction.model;
+
+/**
+ * @author blanc
+ *
+ */
+public class CreditCardTransaction extends Transaction {
+
+	@Override
+	public void validate() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String serialize() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

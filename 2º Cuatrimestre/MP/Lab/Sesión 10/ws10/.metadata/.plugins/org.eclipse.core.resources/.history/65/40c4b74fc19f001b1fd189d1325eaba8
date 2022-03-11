@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package newsstand.service.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * @author blanc
+ *
+ */
+public class ImportPublicationsFromZipFileTests {
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	/**
+	 * Casos:
+	 * 
+	 * 1 Nombre del fichero es nulo -> salta excepción
+	 * 2 
+	 * 3
+	 */
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

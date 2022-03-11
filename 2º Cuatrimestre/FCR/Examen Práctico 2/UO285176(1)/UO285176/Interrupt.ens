@@ -1,0 +1,25 @@
+; Este programa debe leer del dispositivo Switch2 el estado de los interruptores 
+; y mostrarlo en los leds del dispositivo Switch1.
+
+ORIGEN 7B00h
+INICIO main
+.PILA 20h
+
+.CODIGO
+main:
+	; El programa principal instala la rutina de interrupción
+	; y activa las interrupciones. 
+
+	--- Hueco a rellenar por el programa principal ---
+
+	jmp -1
+
+Procedimiento switch2Routine
+	; La rutina de interrupción lee el estado de los interruptores del dispositivo Switch2
+	; y lo muestra en los leds del dispositivo Switch1
+
+	--- Hueco a rellenar por la rutina de servicio ---
+
+FINP
+
+FIN

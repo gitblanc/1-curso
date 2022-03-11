@@ -1,0 +1,29 @@
+package uo.mp.s5.acme.picture;
+
+import java.io.PrintStream;
+
+import uo.mp.s5.figure.drawable.Drawablee;
+
+public class Picture implements Drawablee{
+
+	private int posX;
+	private int posY;
+	private String fileName;
+	/**
+	 * @param posX
+	 * @param posY
+	 * @param fileName
+	 */
+	public Picture(int posX, int posY, String fileName) {
+		super();
+		//FALTA VALIDAR
+		this.posX = posX;
+		this.posY = posY;
+		this.fileName = fileName;
+	}
+	@Override
+	public void draw(PrintStream out) {
+		
+	}
+	
+}

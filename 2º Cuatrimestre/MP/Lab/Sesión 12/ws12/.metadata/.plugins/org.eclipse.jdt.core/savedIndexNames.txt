@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\blanc\OneDrive\Documentos\1er Curso\2º Cuatrimestre\MP\Lab\Sesión 12\ws12\.metadata\.plugins\org.eclipse.jdt.core
+2527848259.index
+929459863.index
+3597367087.index
+2973933111.index
+1540889442.index

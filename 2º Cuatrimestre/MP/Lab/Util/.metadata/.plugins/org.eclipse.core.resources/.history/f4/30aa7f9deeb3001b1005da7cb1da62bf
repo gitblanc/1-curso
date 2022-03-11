@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package uo.mp2021.util.sort;
+
+/**
+ * @author blanc
+ *
+ */
+public class Collections {
+
+	/**
+	 * 
+	 */
+	public Collections() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,15 @@
+ORIGEN 500h
+
+.DATOS
+.CODIGO
+
+  MOVH R0, 0F0h
+  MOVL R0, 1F
+
+
+  MOVL R1, BYTEBAJO '*'
+  MOVH R1, 22h
+
+  MOV[R0], R1
+
+FIN

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="board.Board"/>
+    <fullyQualifiedTypeName name="player.Player"/>
+    <fullyQualifiedTypeName name="board.Coordinate"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="square.tests.TestGetNotFiredCoordinates"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.Board"/>
+    <fullyQualifiedTypeName name="util.IO"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.Coordinate"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.interaction.GameInteractor"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.interaction.GamePresenter"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.ranking.GameRanking"/>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.utils.InputStreamReader"/>
+    <fullyQualifiedTypeName name="com.sun.org.slf4j.internal.Logger"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.log.SimpleLogger"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.util.IO"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.console.ConsoleSessionInteractor"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.util.InvalidOptionException"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.game.Game"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.session.GameLevel"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.player.Player"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.ranking.Score"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.session.SessionInteractor"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.util.exceptions.InvalidOptionException"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.interaction.RandomInteractor"/>
+    <fullyQualifiedTypeName name="com.sun.java.swing.action.ExitAction"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.BoardBuilder"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.log.ConsoleSimpleLogger"/>
+</qualifiedTypeNameHistroy>

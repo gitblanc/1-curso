@@ -1,0 +1,30 @@
+Ejercicio 1
+
+Escriba una función que reciba como parámetros dos listas de cualquier tipo y que devuelva la distancia entre ambas. Esta distancia entre listas quedará definida como la suma de la diferencia entre longitudes de cada lista y el número de elementos distintos en cada posición. De esta manera tenemos que la distancia entre [1.9,1.4,1.2,0,1.7] y [1.7,1.4,0.1,0,1.7] es 2.
+Entre [1.5,0.4,1.3,0] y [0.2,0.4,1.3,0] es 1.
+Entre [1.9,1.7,0,1.9,1.4] y [1.2,2,0.4,1.1,0] es 5.
+Entre [0.2,0,0.1,0,1.1,0.6,0,1.7] y [0.2,0,0.1,0,1.1,1.1,1.4] es 3.
+
+Haga un pequeño programa para verificar su correcto funcionamiento.
+
+Ejercicio 2
+
+Haga una función llamada extrae_negativos que reciba como parámetro una lista de números y extraiga de esa lista pasada como parámetro los números negativos y los devuelva en otra lista como resultado. Además debe eliminar estos números negativos de la lista original.
+
+Ejemplo, si la lista antes de la llamada es [10,11,-7,4.5,-2,-2,6.3,8,-1], después de la llamada debe ser [10,11,4.5,6.3,8] y además la función debe devolver [-7,-2,-2,-1].
+
+Haga un pequeño programa de prueba con estos datos para comprobar su correcto funcionamiento.
+
+Ejercicio 3
+
+Sin usar la función sorted, escriba una función booleana llamada ordenada, que reciba una lista homogénea de cualquier tipo y devuelva True si está ordenada crecientemente o False en caso contrario. Haga un pequeño programa de prueba. Ejemplos de uso:
+
+- Llamada con la lista [9,11,10,20], debe devolver False
+- Llamada con la lista ["Ana","Juan","Teresa"] debe devolver True
+
+Ejercicio 4
+
+Haga una función llamada inserta_ceros, que reciba como parámetro una lista de números, y modifique esa lista insertando un cero delante de cada número negativo. La función no debe devolver nada.
+
+Ejemplo, si la lista antes de la llamada es [10,11,-7,4.5,-2,-2,6.3,8,-1], después de la llamada debe ser [10,11,0,-7,4.5,0,-2,0,-2,6.3,8,0,-1]. Haga un pequeño programa de prueba con estos datos para comprobar su correcto funcionamiento.
+

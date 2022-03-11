@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package uo.mp.newsstand.service;
+
+/**
+ * @author blanc
+ *
+ */
+public class NewsStandException extends Exception {
+
+}

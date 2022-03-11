@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="uo.mp.util.checks.ArgumentsCheck"/>
+    <fullyQualifiedTypeName name="uo.mp.s2.analyzer.model.wordanalyzer.firstRepeatedCharacterTest"/>
+    <fullyQualifiedTypeName name="uo.mp.s2.analyzer.model.WordAnalyzer"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="eduardo_blanco_bielsa_session02_task_seatmanager.SeatManager"/>
+    <fullyQualifiedTypeName name="eduardo_blanco_bielsa_session02_task_seatmanager.Person"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="uo.mp.s1.game.model.Game2048"/>
+</qualifiedTypeNameHistroy>

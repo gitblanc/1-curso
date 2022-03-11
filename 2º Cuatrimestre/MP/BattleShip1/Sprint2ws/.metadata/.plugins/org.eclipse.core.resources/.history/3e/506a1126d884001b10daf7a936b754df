@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package board;
+
+import squares.Ship;
+import squares.Target;
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+public class Square {
+
+	private Target target;
+	private boolean isShot;
+
+	public Square(Ship sub1) {
+		ArgumentChecks.isTrue(sub1 != null);
+		this.target = sub1;
+	}
+
+	public int ShootAt() {
+		this.isShot = true;
+		return this.target.shootAt();
+
+	}
+
+	public boolean isShot() {
+		return this.isShot;
+	}
+
+	public boolean hasImpact() {
+		return this.target.hasImpact();
+
+	}
+
+	public char ToChar() {
+		return this.target.toChar();
+	}
+	
+	public Square setContent(Target obj) {
+		ArgumentChecks.isTrue(obj != null);
+		this.target = obj;
+		return this;
+	}
+	
+	public boolean hasContent() {
+		return this.target != null;
+	}
+}

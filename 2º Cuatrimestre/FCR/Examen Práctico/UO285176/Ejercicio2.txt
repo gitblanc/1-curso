@@ -1,0 +1,13 @@
+Responde a las preguntas indicadas más adelante.
+
+Pregunta 1
+Completa en el papel la tabla de verdad.
+@--- 1 Responde en papel a la Pregunta 1@
+
+Pregunta 2a
+¿A qué función lógica corresponde el circuito mostrado en Eje2-circuito2.dig? 
+@--- 2 Responde en papel a la Pregunta 2a@
+
+Pregunta 2b
+¿Cuántas combinaciones de entradas obtendrán un "0" a la salida?
+@--- 2 Responde en papel a la Pregunta 2b@

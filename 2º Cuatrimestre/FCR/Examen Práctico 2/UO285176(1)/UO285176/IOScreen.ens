@@ -1,0 +1,31 @@
+; Este programa debe escribir el carácter '#' en la columna 12  de la pantalla 
+;(la pantalla tiene 15 columnas numeradas de 0 a 14) en color Azul sobre fondo Amarillo 
+; la etiqueta Addr_1stChar indica la dirección en la que se encuentra el primer carácter
+; de la columna 12  de la primera fila de la pantalla.
+
+ORIGEN 0200h
+INICIO main
+.PILA 20h
+.DATOS
+Addr_1stChar valor 0D00Ch
+
+.CODIGO
+
+Procedimiento putCharInScreen
+	; El procedimiento recibe dos parámetros:
+	;  - La dirección de la pantalla en la que hay que mostrar el carácter
+	;  - El carácter + el atributo con el que hay que presentarlo
+	;El procedimiento saca a pantalla el carácter en la dirección indicada.
+
+	--- Hueco a rellenar por el procedimiento ---
+
+FINP
+
+main:
+
+	; El programa principal calcula la posición y el atributo del carácter
+	; a mostrar y llama a putCharInScreen 8 veces para mostrarlo en pantalla. 
+
+	--- Hueco a rellenar por el programa principal ---
+	jmp -1
+FIN

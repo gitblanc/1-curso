@@ -1,0 +1,21 @@
+package uo.mp.s5.acme.picture;
+
+public class Picture implements Drawablee{
+
+	private int posX;
+	private int posY;
+	private String fileName;
+	/**
+	 * @param posX
+	 * @param posY
+	 * @param fileName
+	 */
+	public Picture(int posX, int posY, String fileName) {
+		super();
+		//FALTA VALIDAR
+		this.posX = posX;
+		this.posY = posY;
+		this.fileName = fileName;
+	}
+	
+}

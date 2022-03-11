@@ -1,0 +1,75 @@
+/**
+ * 
+ */
+package uo.mp.battleship.console;
+
+import java.io.IOException;
+import java.util.List;
+
+import uo.mp.battleship.ranking.Score;
+import uo.mp.battleship.session.GameLevel;
+import uo.mp.battleship.session.SessionInteractor;
+import uo.mp.battleship.util.IO;
+import uo.mp2021.util.log.ConsoleSimpleLogger;
+import uo.mp2021.util.log.SimpleLogger;
+
+/**
+ * @author blanc
+ *
+ */
+public class ConsoleSessionInteractor implements SessionInteractor{
+
+	@Override
+	public GameLevel askGameLevel() throws IOException {
+		return IO.askGameLevel();
+	}
+
+	@Override
+	public String askUserName() throws IOException {
+		return IO.readName();
+		
+	}
+
+	@Override
+	public int askNextOption() throws IOException {
+		return IO.askNextOption();
+		
+	}
+
+	@Override
+	public boolean askDebugMode() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean doYouWantToRegisterYourScore() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void showRanking(List<Score> ranking) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showPersonalRanking(List<Score> ranking) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showErrorMessage(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showFatalErrorMessage(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

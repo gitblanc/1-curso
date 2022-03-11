@@ -1,0 +1,19 @@
+Si la configuración seleccionada en la barra superior de Visual Studio es x64, cámbiala a x86.
+
+Responde a las preguntas indicadas más adelante.
+
+Pregunta 1
+¿A partir de qué dirección de memoria se almacena la variable e? (Responder en hexadecimal)
+@--- 1 Responde en papel a la Pregunta 1 y adjunta una captura de pantalla.@
+
+Pregunta 2
+¿Cuál es la codificación del valor que almacena la variable k? (Responder en hexadecimal)
+@--- 2 Responde en papel a la Pregunta 2@
+
+Pregunta 3
+¿Cuál es la codificación del carácter almacenado en la posición 1 de texto? (Responder en hexadecimal)
+@--- 3 Responde en papel a la Pregunta 3@
+
+Pregunta 4
+Corrige el programa para que el mensaje de salida que se muestra sea correcto.
+@---  COPIA EL ARCHIVO .CPP A LA CARPETA DE ENTREGA.@

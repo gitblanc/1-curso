@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package uo.mp.newsstand.service;
+
+/**
+ * @author blanc
+ *
+ */
+@SuppressWarnings("serial")
+public class NewsStandException extends Exception {
+		private int line;
+		
+		public NewsStandException(int ln, String msg) {
+			super(msg);
+			this.line = ln;
+		}
+		public int getLn() {
+			return line;
+		}
+		@Override
+		public String getMessage() {
+			return "Error en línea " + this.line + ": " + getMessage();
+		}
+	}
+}

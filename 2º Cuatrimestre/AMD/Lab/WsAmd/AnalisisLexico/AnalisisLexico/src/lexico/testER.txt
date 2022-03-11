@@ -1,0 +1,35 @@
+Uo1234
+uo123456
+
+UO123
+UO-1234
+
+a@uniovi.es
+a.1.2@uniovi.com
+
+2a@uniovi.es
+a..b@uniovi.com
+a.@uniovi.es
+
+varA
+a4
+aux
+var_name
+
+3v
+varA_
+Var
+_var1
+
+"Esto es una cadena valida"
+'Con una comilla sola tambien vale'
+
+Esta cadena es invalida porque le faltan las comillas
+"No vale mezclar comillas'
+"Esta cadena, tiene símbolos inválidos!"
+
+// Esta linea es un comentario valido
+
+// Esta line@ no es un comentario_valido 
+// Esta, tampoco.
+/ A esta le falta una barra

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\blanc\Downloads\eduardo_blanco_bielsa_session10_task.zip"/>
+			<item value="C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\Lab\Sesión 11\Material Sesión 11\Material Sesión 11\lab11_exam_marker_initial.zip"/>
+			<item value="C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\MP\Lab\Sesión 11\Material Sesión 11\Material Sesión 11\lab11_sorting_initial.zip"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="651"/>
+		<item key="DIALOG_Y_ORIGIN" value="337"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

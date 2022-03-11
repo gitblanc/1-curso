@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package mp.battleship.sprint1.skeleton.board.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import uo.mp.battleship.board.Board;
+
+/**
+ * @author blanc
+ *
+ */
+class IsFleetSunkTest {
+
+	/**
+	 * Casos:
+	 * 
+	 * 1 Cuando hay varios barcos a flote:
+	 * 	1.1 Después de un disparo que falla devuelve false
+	 * 	1.2 Después de un disparo que toca pero no hunde uno de los barcos
+	 * 		devuelve false
+	 * 	1.3 Después de un disparo que hunde uno de los barcos, pero aún quedan
+	 * 		otros a flote devuelve false 
+	 * 2 Cuando solo hay un barco a flote, después de un disparo que lo hunde,
+	 *   devuelve true
+	 */
+	@Test
+	void testIsFleetSunk1() {
+		Board humanBoard = new Board(10);
+	}
+
+}

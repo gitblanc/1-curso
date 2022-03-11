@@ -1,0 +1,77 @@
+/**
+ * 
+ */
+package uo.mp.battleship.console;
+
+import java.util.List;
+
+import uo.mp.battleship.ranking.Score;
+import uo.mp.battleship.session.GameLevel;
+import uo.mp.battleship.session.SessionInteractor;
+import uo.mp.battleship.util.IO;
+
+/**
+ * @author blanc
+ *
+ */
+public class ConsoleSessionInteractor implements SessionInteractor {
+
+	@Override
+	public GameLevel askGameLevel() {
+		return IO.askGameLevel();
+	}
+
+	@Override
+	public String askUserName() {
+		return IO.readName();
+
+	}
+
+	@Override
+	public int askNextOption() {
+		return IO.askNextOption();
+
+	}
+
+	@Override
+	public boolean askDebugMode(){
+		return IO.askDebugMode();
+	}
+
+	@Override
+	public boolean doYouWantToRegisterYourScore() {
+		return IO.askScoreRegister();
+	}
+
+	@Override
+	public void showRanking(List<Score> ranking) {
+		System.out.println("Date\tHour\tLevel\tRes\tTime\n");
+		for (Score s : ranking) {
+			System.out.println(s.toString());
+		}
+
+	}
+
+	@Override
+	public void showPersonalRanking(List<Score> ranking) {
+		System.out.println("Name\tDate\tHour\tLevel\tRes\tTime\n");
+		for (Score s : ranking) {
+			System.out.println(s.toPersonalString());
+		}
+
+	}
+
+	@Override
+	public void showErrorMessage(String message) {
+		System.out.println(message);
+
+	}
+
+	@Override
+	public void showFatalErrorMessage(String message) {
+		System.out.println(message);
+
+	}
+
+
+}

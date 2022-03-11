@@ -1,0 +1,50 @@
+package uo.mp.s5.acme.picture;
+
+import java.io.PrintStream;
+
+import uo.mp.s5.figure.drawable.Drawable;
+
+public class Picture implements Drawable{
+
+	private int posX;
+	private int posY;
+	private String fileName;
+	/**
+	 * @param posX
+	 * @param posY
+	 * @param fileName
+	 */
+	public Picture(int posX, int posY, String fileName) {
+		super();
+		//FALTA VALIDAR
+		this.posX = posX;
+		this.posY = posY;
+		this.fileName = fileName;
+	}
+	/**
+	 * @return the posX
+	 */
+	public int getPosX() {
+		return posX;
+	}
+	/**
+	 * @return the posY
+	 */
+	public int getPosY() {
+		return posY;
+	}
+	/**
+	 * @return the fileName
+	 */
+	public String getFileName() {
+		return fileName;
+	}
+	@Override
+	public void draw(PrintStream out) {
+		out.println("Dibujando imagen " + this.getFileName());
+		
+	}
+	
+	
+	
+}

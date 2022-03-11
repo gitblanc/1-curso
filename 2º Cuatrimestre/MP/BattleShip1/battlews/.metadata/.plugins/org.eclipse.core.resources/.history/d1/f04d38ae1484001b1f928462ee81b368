@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package mp.battleship.sprint1.skeleton.board.tests;
+
+
+
+import org.junit.Test;
+
+import uo.mp.battleship.board.Board;
+
+/**
+ * @author blanc
+ *
+ */
+public class TestGetNotFiredCoordinates1 {
+
+	/**
+	 * Casos
+	 * 
+	 * 1 Un tablero sin haber sido usado, devuelve false
+	 * 2 Un tablero sin haber sido usado aún y después de disparar
+	 *   una casilla que no ha sido disparada aún, devuelve 
+	 * 3
+	 */
+	@Test
+	void test() {
+		Board humanPlayer = new Board(10);
+		
+	}
+
+}

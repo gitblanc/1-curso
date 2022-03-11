@@ -1,0 +1,96 @@
+/**
+ * 
+ */
+package uo.mp.battleship.ranking;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import uo.mp.battleship.session.GameLevel;
+import uo.mp2021.util.checks.ArgumentChecks;
+
+/**
+ * @author blanc
+ *
+ */
+
+public class Score {
+	private String userName;
+	private GameLevel level;
+	private long time;
+	private Date date;
+	private boolean result;
+
+	public Score(String userName, GameLevel level, long time) {
+		setUserName(userName);
+		this.level = level;
+		this.time = time;
+		date = new Date();
+		this.result = !result;
+	}
+
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
+
+	/**
+	 * @param userName the userName to set
+	 */
+	private void setUserName(String userName) {
+		ArgumentChecks.isTrue(userName != null);
+		ArgumentChecks.isTrue(!userName.isBlank());
+		this.userName = userName;
+	}
+
+	/**
+	 * @return the level
+	 */
+	public GameLevel getLevel() {
+		return level;
+	}
+
+	/**
+	 * @return the time
+	 */
+	public long getTime() {
+		return time;
+	}
+
+	/**
+	 * @return the date
+	 */
+	public Date getDate() {
+		return date;
+	}
+
+	@Override
+	public String toString() {
+		String date = new SimpleDateFormat("dd/MM/yy").format(this.date);
+		String time = new SimpleDateFormat("HH:mm:ss").format(this.date);
+
+		return date + "---" + time + "---" + levelAssignement() + "---" + 
+		getTheResult() + "---" + this.time;
+	}
+
+	public String toPersonalString() {
+		return this.userName + "---" + toString();
+	}
+
+	private String getTheResult() {
+		return this.result ? "won" : "lost";
+	}
+
+	private String levelAssignement() {
+		if (this.level.equals(GameLevel.SEA)) {
+			return "EASY";
+		} else if (this.level.equals(GameLevel.OCEAN)) {
+			return "MEDIUM";
+		} else {
+			return "HARD";
+		}
+	}
+
+}

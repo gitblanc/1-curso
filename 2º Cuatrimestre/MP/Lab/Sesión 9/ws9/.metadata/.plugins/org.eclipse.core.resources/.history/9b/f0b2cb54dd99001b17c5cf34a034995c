@@ -1,0 +1,63 @@
+package uo.mp.newsstand.ui;
+
+import uo.mp.newsstand.domain.Magazine;
+import uo.mp.newsstand.domain.Newspaper;
+import uo.mp.newsstand.domain.Publication;
+import uo.mp.newsstand.ui.console.Console;
+import uo.mp.util.log.Logger;
+
+/**
+ * Asks the user all the data for a new publication.
+ * 
+ */
+public class PublicationForm {
+
+	/**
+	 * @return The new Publication object created. It will be be of any 
+	 * of the child types of Publication.
+	 */
+	public Publication askForPublication() {
+		try {
+		    tryAgain();
+		  }
+		  catch(ApplicationException e){
+		    Logger.log(e.getMessage());
+		  }
+
+	}
+	
+	private Publication tryAgain() throws ApplicationException {
+		String type = Console.readString("Type of publication? (n | m)").toLowerCase();
+		while(type != "n" | type != "m") {
+			tryAgain();
+			type = Console.readString("Type of publication? (n | m)").toLowerCase();
+		}
+		return processType(type);
+	} 
+	public Publication processType(String type) throws ApplicationException {
+		switch (type) {
+		case "n": return askForNewsPaper();
+		case "m": return askForMagazine(); 
+		default:  throw new ApplicationException("Tipo desconocido");
+	}
+	}
+
+
+	private Publication askForMagazine() {
+		String name = Console.readString("name?");
+		int stock = Console.readInteger("stock?");
+		int sales = Console.readInteger("sales?");
+		int regularity = Console.readInteger("regularity?");
+
+		return new Magazine(name, stock, sales, regularity);
+	}
+
+	private Publication askForNewsPaper() {
+		String name = Console.readString("name?");
+		int stock = Console.readInteger("stock?");
+		int sales = Console.readInteger("sales?");
+
+		return new Newspaper(name, stock, sales);
+	}
+
+}

@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package mp.battleship.sprint1.skeleton.board.tests;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import uo.mp.battleship.board.Board;
+
+/**
+ * @author blanc
+ *
+ */
+class TestGetNotFiredCoordinates {
+
+
+	/**
+	 * Casos
+	 * 
+	 * 1 Un tablero sin haber sido usado, devuelve todas las casillas
+	 * 2 Un tablero sin haber sido usado aún y después de disparar
+	 *   una casilla que no ha sido disparada aún, devuelve todas las
+	 *   casillas salvo la disparada
+	 * 3 Retorna lo mismo que el anterior, después de disparar una 
+	 *   casilla que ya había sido disparada
+	 */
+	
+	/**
+	 * GIVEN un tablero sin haber sido usado aún
+	 * WHEN
+	 * THEN devuelve todas las casillas
+	 */
+	@Test
+	void test() {
+		Board humanPlayer = new Board(10);
+		assertEquals(19, humanPlayer.getNotFiredCoordinate().size());
+	}
+
+}
+

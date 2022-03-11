@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package uo.mp2021.util.exceptions;
+
+/**
+ * @author blanc
+ *
+ */
+public class LineFormatException extends Exception {
+	
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int lineNumber;
+
+   
+    public InvalidLineFormatException(int ln, String message) {
+        super(message);
+        lineNumber = ln;
+    }
+
+    
+    @Override
+    public String getMessage() {
+        return "InvalidLineFormatException. Línea " + lineNumber 
+                + super.getMessage();
+    }
+
+}

@@ -1,0 +1,11 @@
+package mp.battleship.sprint1.skeleton.board.tests;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses({ IsFleetSunkTest.class, ShootAt1.class, TestGetNotFiredCoordinates.class })
+public class AllTests {
+
+}

@@ -1,0 +1,75 @@
+/**
+ * 
+ */
+package newsstand.service.tests;
+
+import java.io.FileNotFoundException;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import uo.mp.newsstand.service.Newsstand;
+import uo.mp.newsstand.service.exception.InvalidFileNameException;
+
+/**
+ * @author blanc
+ *
+ */
+public class LoadFileTests {
+	Newsstand n1;
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		n1 = new Newsstand();
+	}
+
+	/**
+	 * Casos:
+	 * 
+	 * 1 Nombre del fichero es nulo -> salta excepción
+	 * 2 Nombre del fichero vacío -> salta excepción
+	 * 3 Longitud del nombre inválida -> salta excepción
+	 * 4 Archivo no encontrado -> salta excepción
+	 * 5 Archivo cumple los requisitos -> se cargan sus publicaciones
+	 */
+	@Test
+	(expected = IllegalArgumentException.class)
+	public void testLoadFile1() {
+		Newsstand n1 = new Newsstand();
+		try {
+			n1.loadFile(null);
+		} catch (InvalidFileNameException e) {
+		}
+	}
+	
+	@Test
+	(expected = IllegalArgumentException.class)
+	public void testLoadFile2() {
+		Newsstand n1 = new Newsstand();
+		try {
+			n1.loadFile("");
+		} catch (InvalidFileNameException e) {
+		}
+	}
+	
+	@Test
+	public void testLoadFile3() {
+		
+		try {
+			n1.loadFile("das");
+		} catch (InvalidFileNameException e) {
+		}
+	}
+	
+	@Test
+	public void testLoadFile4() {
+		Newsstand n1 = new Newsstand();
+			try {
+				n1.loadFile("patata.txt");
+			} catch (InvalidFileNameException e) {
+			}
+	}
+
+}

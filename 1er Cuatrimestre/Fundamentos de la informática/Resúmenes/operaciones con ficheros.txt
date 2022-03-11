@@ -1,0 +1,22 @@
+Ficheros
+
+Funciones:
+
+open()
+open(,)
+
+"r" lectura (read, debe existir ese fichero)
+sin:lectura (debe existir ese fichero)
+"w" escritura (write, se crea si no exista, se "machaca" si existe)
+"a" añadir (append, añade a un fichero ya existente)
+
+Métodos:
+
+.read()
+.readlines()
+.write()
+.close()
+
+Otros:
+
+for linea in fichero (iterable en bucle for)

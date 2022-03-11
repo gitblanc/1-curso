@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"eduardo_blanco_bielsa_session1_plane","l":"uo.mp.s1.plane"},{"m":"eduardo_blanco_bielsa_session1_plane","l":"uo.mp.s1.plane.model"},{"m":"eduardo_blanco_bielsa_session1_plane","l":"uo.mp.s1.plane.ui"}]

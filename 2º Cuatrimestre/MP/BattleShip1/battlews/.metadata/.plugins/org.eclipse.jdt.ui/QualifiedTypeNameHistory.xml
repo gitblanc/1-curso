@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="uo.mp.util.IO"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.interaction.ConsoleInteraction"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.game.TurnSelector"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.BoardBuilder"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.game.Game"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.ArgumentSizeComputer"/>
+    <fullyQualifiedTypeName name="uo.mp2021.util.checks.ArgumentChecks"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.player.HumanPlayer"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.player.ComputerPlayer"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.Board"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="uo.mp.battleship.board.Coordinate"/>
+</qualifiedTypeNameHistroy>

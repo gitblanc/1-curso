@@ -1,0 +1,174 @@
+/**
+ * 
+ */
+package uo.mp.battleship.console;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
+
+import uo.mp.battleship.ranking.Score;
+import uo.mp.battleship.session.GameLevel;
+import uo.mp.battleship.session.SessionInteractor;
+import uo.mp.battleship.util.IO;
+import uo.mp.battleship.util.exceptions.InvalidOptionException;
+
+/**
+ * @author blanc
+ *
+ */
+public class ConsoleSessionInteractor implements SessionInteractor {
+
+	@Override
+	public GameLevel askGameLevel() {
+		do {
+			gameLevel();
+			BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+			char option; 
+			try {
+				option = (char) keyboard.read();
+				switch (option) {
+				case 'S':
+				case 's':
+					return GameLevel.SEA;
+				case 'O':
+				case 'o':
+					return GameLevel.OCEAN;
+				case 'P':
+				case 'p':
+					return GameLevel.PLANET;
+				default:
+					throw new IOException("Opción de nivel no válida");
+				}
+			}catch(IOException e){
+					showFatalErrorMessage(e.getMessage());
+			}
+		}while(true);
+		
+	}
+
+	private void gameLevel() {
+		IO.display("Option?");
+		IO.display("Level? (S)ea, (O)cean, (P)lanet");
+
+	}
+
+	@Override
+	public String askUserName() {
+		do {
+			IO.display("Player name?");
+			BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+			String line;
+			try {
+				line = keyboard.readLine();
+				return line;
+			} catch (IOException e) {
+				showFatalErrorMessage(e.getMessage());
+			}
+		}
+		while(true);
+
+	}
+
+	@Override
+	public int askNextOption() {
+		do {
+			IO.menu();
+			try {
+				IO.askNextOption();
+			} catch (IOException e) {
+				showFatalErrorMessage(e.getMessage());
+			}
+		}
+		while(true);
+
+	}
+
+	@Override
+	public boolean askDebugMode() {
+		do {
+			IO.display("Do you want to play in debug mode?");
+			IO.display("(y)es, (n)o");
+			BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+			char option;
+			try {
+				option = (char) keyboard.read();
+				switch (option) {
+				case 'y':
+				case 'Y':
+					return true;
+				case 'n':
+				case 'N':
+					return false;
+				default:
+					throw new InvalidOptionException("Opción de modo no válida, escoja otra");
+				}
+			} catch (InvalidOptionException e) {
+				showErrorMessage(e.getMessage());
+			} catch (IOException e) {
+				showFatalErrorMessage(e.getMessage());
+			}
+		} while(true);
+	}
+
+	@Override
+	public boolean doYouWantToRegisterYourScore() {
+		do {
+			IO.display("Do you want to store your score?");
+			IO.display("(y)es, (n)o");
+			BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+			char option;
+			try {
+				option = (char) keyboard.read();
+				switch (option) {
+				case 'y':
+				case 'Y':
+					return true;
+				case 'n':
+				case 'N':
+					return false;
+				default:
+					throw new InvalidOptionException("Opción de guardado de puntuación " + "no válida");
+				}
+			} catch (InvalidOptionException e) {
+				showErrorMessage(e.getMessage());
+			} catch (IOException e) {
+				showFatalErrorMessage(e.getMessage());
+			}
+	
+			
+		}while(true);
+	}
+
+	@Override
+	public void showRanking(List<Score> ranking) {
+		IO.display("Date\tHour\tLevel\tRes\tTime\n");
+		for (Score s : ranking) {
+			IO.display(s.toString());
+		}
+
+	}
+
+	@Override
+	public void showPersonalRanking(List<Score> ranking) {
+		IO.display("Name\tDate\tHour\tLevel\tRes\tTime\n");
+		for (Score s : ranking) {
+			IO.display(s.toPersonalString());
+		}
+
+	}
+
+	@Override
+	public void showErrorMessage(String message) {
+		IO.display(message);
+
+	}
+
+	@Override
+	public void showFatalErrorMessage(String message) {
+		IO.display(message);
+
+	}
+
+}

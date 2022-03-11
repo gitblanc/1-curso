@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package uo.mp.s5.shapes;
+
+/**
+ * @author blanc
+ *
+ */
+public class Circle extends Shape{
+
+	public Circle(int x, int y, Colour colour) {
+		super(x, y, colour);
+		// TODO Auto-generated constructor stub
+	}
+
+}

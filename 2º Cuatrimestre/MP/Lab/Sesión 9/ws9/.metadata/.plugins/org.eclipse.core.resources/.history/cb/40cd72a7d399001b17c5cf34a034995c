@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package uo.mp.newsstand.ui;
+
+/**
+ * @author blanc
+ *
+ */
+public class ApplicationException extends Exception {
+
+	public ApplicationException(String msg) {
+		super(msg);
+	}
+	
+	@Override
+	public String getMessage() {
+		return "Error: " + getMessage();
+	}
+}

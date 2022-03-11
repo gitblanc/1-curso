@@ -1,0 +1,98 @@
+ClearTests (done)
+	Clear en una lista vacía no tiene efecto
+	Clear en una lista con un elemento deja la lista vacía
+	Clear en una lista con varios elementos deja la lista vacía
+AddInPositionTests
+	Add en la posición 0 de una lista vacía añade el elemento
+	Add en la posición 0 de una lista con varios elementos añade el elemento y mueve el resto una posición a la derecha
+	Add en una posición intermedia de una lista añade el elemento y mueve el resto una posición a la derecha
+	Add en la última posición de una lista con elementos añade el elemento
+	Add en la posición después del último de una lista con elementos añade el elemento
+	Intentar añadir  en una posición negativa, se lanza IndexOutOfBoundsException
+	Intentar añadir en una posicón > size(), se lanza IndexOutOfBoundsException
+	intentar añadir un null, se lanza IllegalArgumentException
+AddInLastPositionTests
+	Add en una lista vacía añade el elemento y devuelve true
+	Add en una lista con varios elementos, añade el elemento en la última posición y devuelve true
+	Add en una lista vacía añade el elemento en la primera posición y devuelve true
+	Se puede añadir un elemento repetido
+	Intentar añadir un null, se lanza IllegalArgumentException
+ContainsTests
+	Una lista vacía no contiene un elemento arbitrario
+	Una lista con varios elementos no contiene al elemento 
+	Una lista con un elemento contiene al elemento
+	Una lista con varios elemento contiene al elemento
+	Una lista vacía no contienen null
+	Una lista con elementos no contiene null
+EqualsTests
+	Dos listas vacías de tipo ArrayList son iguales
+	Dos lisa vacías de tipo LinkedList son iguales
+	Dos listas vacías de ambos tipos son iguales
+	Dos lista de tipo ArrayList con los mismoselementos en la misma posición son iguales
+	Dos listas de tipo LinkedList con los mismos elementos en la misma posición son iguales
+	Dos listas de ambos tipos con los mismsos elementos en la misa posición son iguales
+	Dos listas de tipo ArrayList con los mismos elementos en diferente posición no son iguales
+	Dos listas de tipo LinkedList con los mismos elementos endiferentes posiciones no sn iguales
+	Dos listas de ambos tipos con los mismos elementos en diferentes posiciones no son iguales
+	Dos listas de tipo ArrayList con diferentes elementos no son iguales
+	Dos listas de tipo LinkedList con diferentes elementos no son iguales
+	Dos listas de ambos tipos con diferentes elementos no son iguales
+SetTests
+	Set en la posición 0 de una lista con un elemento cambia el valor y devuelve el valor anterior de esa posición 
+	Set en la posición n de una lista con varios elementos, cambia el valor de la posición n y devuelve el valor anterior de esa posición
+	Intentar realizar set en la posición 0 de una lista vacía, lanza IndexOutOfBoundsException
+        Intentar realizar set en la posición -1 de una lista vacía, lanza IndexOutOfBoundsException
+	Intentar realizar set en la posición size() de una lista vacía, lanza IndexOutOfBoundsException
+	Intentar realizar set en la posición -1 de una lista con elementos, lanza IndexOutOfBoundsException
+	Intentar realizar set en la posición size() de una lista con elementos, lanza  IndexOutOfBoundsException
+GetTests
+	Get devuelve cada elemento en una lista con elementos
+	Intentar realizar get en la posición 0 de una lista vacía, lanza IndexOutOfBoundsException
+	Intentar realizar get en la posición -1 de una lista vacía, lanza IndexOutOfBoundsException
+	Intentar realizar get en la posición -1 de una lista con elementos, lanza IndexOutOfBoundsException
+	Intentar realizar get en la posición size() de una lista con elementos, lanza IndexOutOfBoundsException
+HashCodeTests
+	El hashCode de una lista vacía es 1
+	El hashCode de una lista no vacía es el hashCode calculado
+	El hashCode de dos listas iguales del mismo tipo es el mismo
+	El hashCode de dos listas iguales de diferente tipo es el mismo
+	El hashCode de dos listas con los mismos elementos en posiciones diferentes es distinto
+IndexOfTests
+	El index de un elemento que no existe es -1
+	El index de null es -1
+	El index de cada elementos en la lista es el correcto
+	En una lista con elementos repetidos, el indexOf de un elemento devuelve la posición de la primera aparición
+IsEmptyTests
+	Una lista recien creada esta vacía
+	Una lista queda vacía después de la operación clear
+	Una lista con un elemento no está vacía
+	Una lista con más de un elemento no esta vacía
+RemoveFromPositionTests
+	Remove de la posición 0 de una lista con un elemento devuelve el elemento eliminado y la lista queda vacía
+	Remove de la posición 0 de una lista no vacía devuelve el elemento eliminado y quita el elemento de la lista
+	Remove de la posición 0 de una lista no vacía, mueve el resto de elementos una posición a la izquierda
+	Remove de una posición existente, devuelve el elemento borrado y se quita el elemento de la lista
+	Remove de una posición existente, mueve los elementos de la derecha una posición a la izquierda
+	Remove de la última posición, devuelve el elemento borrado y quita el lemento de la lista
+	Intentar realizar remove en la posición -1 lanza IndexOutOfBoundsException
+	Intentar realizar remove en la posición 0 de una lista vacía, lanza IndexOutOfBoundsException
+	Intentar realizar remove en la posición size() de una lista vacía, lanza IndexOutOfBoundsException
+	Intentar realizar remove en la posición size() de una lista no vacía, lanza IndexOutOfBoundsException
+RemoveObjectTests
+	Eliminar un object existente en una lista con un elemento, devuelve true y la lista queda vacía
+	Eliminar un object existente en una lista con varios elementos, devuelve true y el elemento es borrado
+	Eliminar un object no existente en una lista vacía devuelve false
+	Eliminar un object no existente en una lista con elementos, devuelve false y la lista no cambia
+	Eliminar un object de una lista con elementos repetidos, devuelve true y se borra la primera aparición del objecto en la lista
+	Intentar realizar remove con null lanza IllegalArgumentException
+SizeTests
+	Una lista vacía tiene tamaño 0
+	Una lista con un elemento tiene tamaño 1
+	Una lista con varios elementos tiene el tamaño correcto
+	El size() se incrementa en uno después de añadir un elemento a la lista
+	El size() se decrementa en uno después de borrar un elemento de la lista
+ToStringTests
+	Una lista vacía tiene "[]" como toString
+	Una lista con un elemento "A" tiene "[A]" como toString
+	Una lista con dos elementos "A" y "B" tiene "[A, B]" como toString
+
