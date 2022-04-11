@@ -1,8 +1,0 @@
-﻿  Programa1.cpp
-C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\BlancoBielsaEduardo-41012833S\Eje1\Programa1.cpp(15,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\BlancoBielsaEduardo-41012833S\Eje1\Programa1.cpp(16,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\BlancoBielsaEduardo-41012833S\Eje1\Programa1.cpp(17,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\BlancoBielsaEduardo-41012833S\Eje1\Programa1.cpp(18,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\BlancoBielsaEduardo-41012833S\Eje1\Programa1.cpp(19,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\BlancoBielsaEduardo-41012833S\Eje1\Programa1.cpp(20,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  Ejer1-Prog1.vcxproj -> C:\Users\blanc\OneDrive - Universidad de Oviedo\Documentos\FCR\BlancoBielsaEduardo-41012833S\Eje1\x64\Debug\Ejer1-Prog1.exe
